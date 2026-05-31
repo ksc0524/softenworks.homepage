@@ -143,16 +143,22 @@ header {
 	background: var(--blue);
 }
 
-h1 {
+.hero h1 {
 	margin: 0;
-	font-size: clamp(42px, 6vw, 78px);
+/* 	font-size: clamp(42px, 6vw, 78px); */
+	font-size: 4em;
 	line-height: 1.05;
-	letter-spacing: -.06em;
-	color: var(--navy);
+/* 	letter-spacing: -.06em; */
+/* 	color: var(--navy); */
 }
 
-h1 em {
-	font-style: normal;
+.hero h2 {
+	margin: 0;
+	font-size: 2em;
+}
+
+.hero h2 em {
+/* 	font-style: normal; */
 	background: linear-gradient(135deg, var(--blue), var(--violet));
 	-webkit-background-clip: text;
 	color: transparent;
@@ -225,12 +231,23 @@ h1 em {
 	opacity: .92;
 }
 
+.hero-card div.vertical-logo {
+	position: absolute;
+	right: -12px;
+	top: 68px;
+	width: 420px;
+	height: 420px;
+	opacity: .92;
+	background-image: url(../img/softenworks-logo-vertical-whitesoften.png);
+}
+
 .metric-wrap {
 	position: absolute;
 	left: 34px;
 	right: 34px;
 	bottom: 34px;
 	display: grid;
+	margin-top: 200px;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 12px;
 }
