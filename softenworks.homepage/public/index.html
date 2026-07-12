@@ -10,7 +10,7 @@
 <body>
   <header>
     <div class="container nav">
-      <a href="index.html" class="brand" aria-label="SoftenWORKS home">
+      <a href="index.html" class="brand" aria-label="SoftenWORKS home" title="Home">
       	<img width="240" height="48" src="img/softenworks-logo.svg"/>
       </a>
       <nav class="menu" aria-label="Main navigation">
@@ -25,20 +25,87 @@
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">Enterprise Software Company</div>
-          <h1 style="font-family: sans-serif;">Soften<span style="font-size: 0.82em; color: #3274E8;">WORKS</span></h1>
-          <h3 style="margin: 0; line-height: 1.05;">소픈웍스(주)</h3>
-          <p><h2><em>Soften Your Complexity</em></h2>복잡함은 줄이고, 가치에 집중할 수 있도록.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#products">제품 보기</a>
-            <a class="btn secondary" href="#about">회사 소개</a>
+    <section class="hero" aria-label="SoftenWORKS highlights">
+      <div class="container hero-slider" data-autoplay="6000">
+        <div class="hero-viewport">
+          <div class="hero-track">
+            <article class="hero-slide" aria-label="회사 소개">
+              <div class="hero-grid">
+                <div class="hero-copy">
+                  <div class="eyebrow">Enterprise Software Company</div>
+                  <h1 class="hero-title">Soften<span>WORKS</span></h1>
+                  <h3 class="hero-company">소픈웍스(주)</h3>
+                  <p></p>
+                  <h2><em>Soften Your Complexity</em></h2>
+                  <p style="margin-top: 0;">복잡함은 줄이고, 가치에 집중하세요.</p>
+                  <div class="hero-actions">
+                    <a class="btn primary" href="#about">회사 소개</a>
+                    <a class="btn secondary" href="#contact">문의하기</a>
+                  </div>
+                </div>
+                <div class="hero-card" aria-label="Brand visual card">
+                  <img width="420" height="420" src="img/softenworks-logo-vertical-whitesoften.svg" alt="SoftenWORKS vertical logo" />
+                </div>
+              </div>
+            </article>
+
+            <article class="hero-slide" aria-label="제품 소개">
+              <div class="hero-grid">
+                <div class="hero-copy">
+                  <div class="eyebrow">Enterprise Software Company</div>
+                  <h1 class="hero-title">Products</h1>
+                  <h3 class="hero-company">Soften Series</h3>
+                  <p></p>
+                  <h2><em>Soften Your Complexity</em></h2>
+                  <p style="margin-top: 0;">PDF 전문 비교, Polarion ALM 플러그인, Template 기반 문서 출력 등 복잡한 업무 현장을 더 쉽고 빠르게 만드는 제품군을 제공합니다.</p>
+                  <div class="hero-actions">
+                    <a class="btn primary" href="#products">제품 보기</a>
+                    <a class="btn secondary" href="softenpdf.html">SoftenPDF</a>
+                  </div>
+                </div>
+                <div class="hero-panel product-panel" aria-label="SoftenWORKS product cards">
+                  <div class="mini-product"><strong>Soften<span>PDF</span></strong><p>웹기반 PDF 도면/문서 비교 자동화 솔루션</p></div>
+                  <div class="mini-product"><strong>Soften<span>GANTT</span></strong><p>ALM 기반 프로젝트 일정 관리 플러그인</p></div>
+                  <div class="mini-product"><strong>Soften<span>GRID</span></strong><p>ALM 기반 워크아이템 Rich Display 플러그인</p></div>
+                  <div class="mini-product"><strong>Soften<span>EXPORT</span></strong><p>MS Word, Excel 템플릿 기반 데이터 출력</p></div>
+                  <div class="mini-product"><strong>Soften<span>REPORT</span></strong><p>MS PowerPoint 템플릿 기반 데이터 출력</p></div>
+                  <div class="mini-product"><strong>Soften<span>FLOW</span></strong><p>웹기반 Workflow 관리 플러그인</p></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="hero-slide" aria-label="ALM 사업 영역">
+              <div class="hero-grid">
+                <div class="hero-copy">
+                  <div class="eyebrow">CONSULTING & IMPLEMENTATION</div>
+                  <h1 class="hero-title">ALM</h1>
+                  <h3 class="hero-company">Enterprise ALM Solutions</h3>
+                  <p></p>
+                  <h2><em>Application Lifecycle Management</em></h2>
+                  <p style="margin-top: 0;">SIEMENS Polarion 기반 A-SPICE, ISO-26262, ISO-21434, V-Model, Agile 등 어플리케이션 개발방법론 솔루션 구축</p>
+                  <div class="hero-actions">
+                    <a class="btn primary" href="#business">사업영역 보기</a>
+                    <a class="btn secondary" href="#contact">상담 문의</a>
+                  </div>
+                </div>
+                <div class="hero-panel alm-panel" aria-label="ALM business areas">
+                  <div class="alm-line"><span>01</span><strong>ALM / PLM Consulting</strong></div>
+                  <div class="alm-line"><span>02</span><strong>Siemens Polarion Plugins<br/>SoftenGANTT, SoftenGRID</strong></div>
+                  <div class="alm-line"><span>03</span><strong>A-SPICE, ISO 26262, V-Model, Agile<br/>프로세스 구축 </strong></div>
+                  <div class="alm-line"><span>04</span><strong>ALM, Tool Chain, CI/CD/CT<br/>System Integration</strong></div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="hero-card" aria-label="Brand visual card">
-          <img width="420" height="420" src="img/softenworks-logo-vertical-whitesoften.png"/>
+
+        <button class="hero-nav hero-prev" type="button" aria-label="이전 슬라이드"><span aria-hidden="true">‹</span></button>
+        <button class="hero-nav hero-next" type="button" aria-label="다음 슬라이드"><span aria-hidden="true">›</span></button>
+
+        <div class="hero-dots" role="tablist" aria-label="Hero slide navigation">
+          <button class="hero-dot active" type="button" aria-label="1번 슬라이드" aria-current="true"></button>
+          <button class="hero-dot" type="button" aria-label="2번 슬라이드"></button>
+          <button class="hero-dot" type="button" aria-label="3번 슬라이드"></button>
         </div>
       </div>
     </section>
@@ -47,23 +114,21 @@
       <div class="container">
         <div class="section-head">
           <h2>회사소개</h2>
-          <p>SoftenWORKS는 엔터프라이즈 현장에서 반복되는 복잡한 업무를 제품화된 소프트웨어로 해결하는 기술 중심 회사입니다.</p>
+          <p>소픈웍스㈜는 기술을 통해 업무와 일상의 복잡함을 더 쉽고 효율적으로 만드는 소프트웨어를 개발합니다. 연구 개발에 진심을 다하고 항상 고민하고 꾸준히 투자하는 소프트웨어 개발 기업입니다.</p>
         </div>
         <div class="about-grid">
           <article class="card">
             <div class="num">01</div>
-            <h3>Less Friction</h3>
-            <p>사용자가 불필요한 반복 작업과 복잡한 절차에서 벗어나 핵심 업무에 집중할 수 있도록 돕습니다.</p>
+            <h3>About Us</h3>
+            <p>단순한 시스템 구축을 넘어, 사용자의 불편함을 해결하고 업무의 효율성을 높이는 제품을 만드는 데 집중합니다. 연구개발을 핵심 가치로 삼고 지속적인 투자와 혁신을 통해 고객에게 실질적인 가치를 제공하는 소프트웨어 기업입니다.</p>
           </article>
-          <article class="card">
+          <article class="card history-card">
             <div class="num">02</div>
-            <h3>More Flow</h3>
-            <p>문서, 일정, 데이터, 협업 흐름을 자연스럽게 연결하여 업무 진행을 더 매끄럽게 만듭니다.</p>
-          </article>
-          <article class="card">
-            <div class="num">03</div>
-            <h3>Engineering Clarity</h3>
-            <p>복잡한 요구사항을 명확한 구조와 안정적인 기술로 구현하는 엔지니어링 역량을 추구합니다.</p>
+            <h3>Soften History</h3>
+            <picture class="history-image">
+              <source media="(max-width: 560px)" srcset="img/soften-history-vertical.svg">
+              <img src="img/soften-history-horizontal.svg" alt="Soften History">
+            </picture>
           </article>
         </div>
       </div>
@@ -73,39 +138,50 @@
       <div class="container">
         <div class="section-head">
           <h2>제품소개</h2>
-          <p>SoftenWORKS의 제품군은 문서 비교, 프로젝트 관리, 업무 데이터 처리 등 실제 현장의 문제를 중심으로 확장됩니다.</p>
+          <p>SOFTEN 시리즈 제품을 간략하게 소개합니다. 상세한 내용은 [자세히 보기] 링크를 클릭하세요.</p>
         </div>
         <div class="product-grid">
           <article class="product">
             <div>
               <div class="icon">PDF</div>
               <h3>Soften<span>PDF</span></h3>
-              <p>도면, 문서, 책자 등 PDF 간 차이를 시각적으로 비교하고 검토 업무를 자동화합니다.</p>
+              <p>웹기반 PDF 문서/도면/이미지 비교 전문 솔루션. 자체 고유 알고리즘을 사용하여 빠르고 정확하게 차이점을 도출하고 Summary 를 제공합니다.</p>
             </div>
+            <img src="img/soften-pdf-image.png" alt="Soften PDF">
             <a class="product-link" href="softenpdf.html">자세히 보기</a>
           </article>
           <article class="product">
             <div>
-              <div class="icon">G</div>
+              <div class="icon">Gantt</div>
               <h3>Soften<span>GANTT</span></h3>
-              <p>프로젝트 일정과 작업 흐름을 직관적인 간트 차트 기반으로 관리합니다.</p>
+              <p>지멘스 Polarion ALM의 work item 을 기반으로 WBS 및 일정 계획을 Gantt로 관리하는 전문 플러그인입니다.</p>
             </div>
+            <img src="img/soften-gantt.png" alt="Soften GANTT">
             <a class="product-link" href="softengantt.html">자세히 보기</a>
           </article>
           <article class="product">
             <div>
-              <div class="icon">GRID</div>
+              <div class="icon">Grid</div>
               <h3>Soften<span>GRID</span></h3>
-              <p>업무 항목과 데이터를 그리드 기반으로 빠르게 조회, 편집, 분석할 수 있게 합니다.</p>
+              <p>지멘스 Polarion ALM의 work item 을 다양한 Rich display 를 구성할 수 있는 위젯 플러그인입니다.</p>
             </div>
-            <a class="product-link" href="softengrid.html">자세히 보기</a>
+            <img src="img/soften-grid.png" alt="Soften GRID">
           </article>
           <article class="product">
             <div>
-              <div class="icon">AI</div>
-              <h3>Soften<span>AI</span></h3>
-              <p>문서와 업무 데이터를 기반으로 의미 있는 차이와 이상 징후를 판단하는 지능형 기능을 연구합니다.</p>
+              <div class="icon">Report</div>
+              <h3>Soften<span>REPORT</span></h3>
+              <p>다양한 데이터를 MS Office 를 템플릿으로 구성하여 파일로 출력하고 리포팅하는 라이브러리성 어플리케이션입니다.</p>
             </div>
+            <img src="img/soften-report.png" alt="Soften REPORT">
+          </article>
+          <article class="product">
+            <div>
+              <div class="icon">Flow</div>
+              <h3>Soften<span>FLOW</span></h3>
+              <p>명확한 Role 기반의 업무와 정확한 Rule 기반의 flow 를 구성하는 웹기반 Workflow 엔진입니다. </p>
+            </div>
+            <img src="img/soften-flow.png" alt="Soften FLOW">
           </article>
         </div>
       </div>
@@ -115,7 +191,7 @@
       <div class="container">
         <div class="section-head">
           <h2>사업영역</h2>
-          <p>제품 개발과 엔터프라이즈 시스템 구축 경험을 바탕으로 고객 업무에 맞는 실질적인 개선을 제공합니다.</p>
+          <p>제품 개발과 엔터프라이즈 시스템 구축 경험을 바탕으로 고객 업무에 맞는 실질적인 개선 효과를 제공합니다.</p>
         </div>
         <div class="business-grid">
           <article class="business-item">
@@ -124,15 +200,15 @@
           </article>
           <article class="business-item">
             <div class="mark">02</div>
-            <div><h3>Document & PDF Automation</h3><p>문서 비교, 검토, 리포트 생성, 대용량 문서 처리 자동화 영역을 지원합니다.</p></div>
+            <div><h3>ALM Consulting & Implementation</h3><p>Siemens Polarion ALM 기반으로 어플리케이션 개발 프로세스를 컨설팅하고 구축합니다.</p></div>
           </article>
           <article class="business-item">
             <div class="mark">03</div>
-            <div><h3>Project & Workflow Solutions</h3><p>일정 관리, 협업 관리, 업무 흐름 가시화를 위한 UI/UX 중심 솔루션을 제공합니다.</p></div>
+            <div><h3>PLM Consulting & Implementation</h3><p>In-house 및 Siemens Teamcenter 기반으로 PLM 시스템을 컨설팅하고 구축합니다.</p></div>
           </article>
           <article class="business-item">
             <div class="mark">04</div>
-            <div><h3>System Integration & Consulting</h3><p>고객 환경에 맞춘 시스템 연계, 플러그인 개발, 운영 개선 컨설팅을 수행합니다.</p></div>
+            <div><h3>System Integration & Consulting</h3><p>웹기반의 기업 시스템을 PI 컨설팅하고 구축합니다.</p></div>
           </article>
         </div>
       </div>
@@ -141,14 +217,20 @@
     <section id="history" class="history">
       <div class="container">
         <div class="section-head">
-          <h2>사업 이력</h2>
-          <p>주요 수행 이력은 실제 내용에 맞게 연도와 고객명을 교체해 사용하면 됩니다.</p>
+          <h2>제품 이력</h2>
+          <p>Soften 제품이 적용되거나, 해당 제품 기반으로 시스템을 구축한 주요 이력입니다.</p>
         </div>
         <div class="timeline">
-          <div class="history-row"><strong>2026</strong><p>SoftenWORKS 브랜드 및 제품군 정비, SoftenPDF · SoftenGANTT · SoftenGRID 통합 제품 전략 수립</p></div>
-          <div class="history-row"><strong>2025</strong><p>PDF 비교 솔루션 고도화 및 대용량 문서 처리 성능 개선</p></div>
-          <div class="history-row"><strong>2024</strong><p>엔터프라이즈 업무 시스템 연계형 Gantt/Grid 솔루션 개발 및 구축</p></div>
-          <div class="history-row"><strong>2023</strong><p>제조·공공·엔지니어링 분야 업무 자동화 및 시스템 통합 프로젝트 수행</p></div>
+          <div class="history-row"><strong>2026</strong><p>SoftenPDF</p><p>한국교과서연구재단</p><p>교과서 수정/보완 업무 프로세스 연계</p></div>
+          <div class="history-row"><strong>2025</strong><p>SoftenPDF</p><p>한국교과서연구재단</p><p>제품을 기반으로 교과용도서 수정/보완 검증 자동화 시스템 고도화</p></div>
+          <div class="history-row"><strong>2024</strong><p>SoftenPDF</p><p>한화오션</p><p>조선 분야 도면 비교 시스템 기능 고도화 및 시리즈 선 자동 비교 연계</p></div>
+          <div class="history-row"><strong>2024</strong><p>SoftenPDF</p><p>한국교과서연구재단</p><p>제품을 기반으로 교과용도서 수정/보완 검증 자동화 시스템 구축</p></div>
+          <div class="history-row"><strong>2024</strong><p>SoftenGANTT</p><p>디와이씨스</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
+          <div class="history-row"><strong>2024</strong><p>SoftenGANTT, SoftenGRID</p><p>삼성전자</p><p>제품들을 기반으로 기술 로드맵 관리 시스템 구축</p></div>
+          <div class="history-row"><strong>2024</strong><p>SoftenPDF</p><p>DY이노베이트</p><p>제품을 사용하여 CAD 전환을 위한 도면 검증</p></div>
+          <div class="history-row"><strong>2023</strong><p>SoftenGANTT</p><p>일흥</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
+          <div class="history-row"><strong>2022</strong><p>SoftenPDF</p><p>대우조선해양</p><p>제품을 기반으로 조선 분야 도면 비교 시스템 구축</p></div>
+          <div class="history-row"><strong>2021</strong><p>SoftenPDF</p><p>삼성SDI</p><p>제품을 기반으로 PLM을 연계하여 도면 비교 자동화 시스템 구축</p></div>
         </div>
       </div>
     </section>
@@ -157,15 +239,15 @@
       <div class="container">
         <div class="contact-box">
           <div>
-            <h2>업무의 복잡함을<br />부드럽게 바꿔보세요.</h2>
-            <p>제품 도입, 기술 협업, 구축 문의가 필요하시면 SoftenWORKS에 연락해 주세요.</p>
+            <h2>CONTACT US</h2>
+            <p>제품 도입, 기술/영업 협업, 구축 문의가 필요하시면 SoftenWORKS에 연락해 주세요.</p>
             <div class="hero-actions">
               <a class="btn primary" href="mailto:contact@softenworks.com">문의 메일 보내기</a>
             </div>
           </div>
           <div class="contact-list">
-            <div><strong>Email</strong>contact@softenworks.com</div>
-            <div><strong>Phone</strong>000-0000-0000</div>
+            <div><strong>Email</strong>contact@softenworks.com<br>support@softenworks.com</div>
+            <div><strong>Phone</strong>+82 031-222-2222</div>
             <div><strong>Address</strong>서울특별시 ○○구 ○○로 00</div>
             <div><strong>Business Hours</strong>Mon - Fri, 09:00 - 18:00</div>
           </div>
@@ -180,5 +262,65 @@
       <div>Less friction. More flow.</div>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const slider = document.querySelector('.hero-slider');
+      if (!slider) return;
+
+      const track = slider.querySelector('.hero-track');
+      const slides = Array.from(slider.querySelectorAll('.hero-slide'));
+      const dots = Array.from(slider.querySelectorAll('.hero-dot'));
+      const prev = slider.querySelector('.hero-prev');
+      const next = slider.querySelector('.hero-next');
+      const interval = Number(slider.dataset.autoplay || 6000);
+      let current = 0;
+      let timer = null;
+
+      const showSlide = (index) => {
+        current = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === current);
+          dot.setAttribute('aria-current', i === current ? 'true' : 'false');
+        });
+      };
+
+      const start = () => {
+        stop();
+        timer = window.setInterval(() => showSlide(current + 1), interval);
+      };
+
+      const stop = () => {
+        if (timer) window.clearInterval(timer);
+      };
+
+      prev.addEventListener('click', () => { showSlide(current - 1); start(); });
+      next.addEventListener('click', () => { showSlide(current + 1); start(); });
+      dots.forEach((dot, index) => dot.addEventListener('click', () => { showSlide(index); start(); }));
+
+      ['mouseenter', 'mousemove', 'click', 'touchstart'].forEach(event =>
+          slider.addEventListener(event, stop)
+      );
+      slider.addEventListener('mouseleave', start);
+      slider.addEventListener('focusin', stop);
+      slider.addEventListener('focusout', start);
+
+      let touchStartX = 0;
+      slider.addEventListener('touchstart', (event) => {
+        touchStartX = event.changedTouches[0].screenX;
+      }, { passive: true });
+      slider.addEventListener('touchend', (event) => {
+        const diff = event.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(diff) > 50) {
+          showSlide(diff < 0 ? current + 1 : current - 1);
+          start();
+        }
+      }, { passive: true });
+
+      showSlide(0);
+      start();
+    })();
+  </script>
 </body>
 </html>
