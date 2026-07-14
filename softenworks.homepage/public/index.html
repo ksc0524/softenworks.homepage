@@ -13,14 +13,18 @@
       <a href="index.html" class="brand" aria-label="SoftenWORKS home" title="Home">
       	<img width="240" height="48" src="img/softenworks-logo.svg"/>
       </a>
-      <nav class="menu" aria-label="Main navigation">
+      <nav id="main-menu" class="menu" aria-label="Main navigation">
         <a href="#about">회사소개</a>
         <a href="#products">제품소개</a>
         <a href="#business">사업영역</a>
-        <a href="#history">사업 이력</a>
+        <a href="#history">사업이력</a>
         <a class="cta" href="#contact">Contact</a>
       </nav>
-      <a class="hamburger" href="#contact">문의</a>
+      <button class="hamburger" type="button" aria-label="메뉴 열기" aria-controls="main-menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
     </div>
   </header>
 
@@ -38,6 +42,7 @@
                   <p></p>
                   <h2><em>Soften Your Complexity</em></h2>
                   <p style="margin-top: 0;">복잡함은 줄이고, 가치에 집중하세요.</p>
+                  <p style="margin-top: 0;">업무와 일상의 복잡함을 더 쉽고 효율적으로 만드는 경험을 제공합니다.</p>
                   <div class="hero-actions">
                     <a class="btn primary" href="#about">회사 소개</a>
                     <a class="btn secondary" href="#contact">문의하기</a>
@@ -78,11 +83,11 @@
               <div class="hero-grid">
                 <div class="hero-copy">
                   <div class="eyebrow">CONSULTING & IMPLEMENTATION</div>
-                  <h1 class="hero-title">ALM</h1>
-                  <h3 class="hero-company">Enterprise ALM Solutions</h3>
+                  <h1 class="hero-title">ALM / PLM</h1>
+                  <h3 class="hero-company">Enterprise ALM & PLM</h3>
                   <p></p>
-                  <h2><em>Application Lifecycle Management</em></h2>
-                  <p style="margin-top: 0;">SIEMENS Polarion 기반 A-SPICE, ISO-26262, ISO-21434, V-Model, Agile 등 어플리케이션 개발방법론 솔루션 구축</p>
+                  <h2><em>IT Consulting & SI</em></h2>
+                  <p style="margin-top: 0;">SIEMENS Polarion ALM 기반으로 A-SPICE, ISO-26262, ISO-21434, V-Model, Agile 등 어플리케이션 개발 프로세스를 구축합니다.</p>
                   <div class="hero-actions">
                     <a class="btn primary" href="#business">사업영역 보기</a>
                     <a class="btn secondary" href="#contact">상담 문의</a>
@@ -221,16 +226,17 @@
           <p>Soften 제품이 적용되거나, 해당 제품 기반으로 시스템을 구축한 주요 이력입니다.</p>
         </div>
         <div class="timeline">
-          <div class="history-row"><strong>2026</strong><p>SoftenPDF</p><p>한국교과서연구재단</p><p>교과서 수정/보완 업무 프로세스 연계</p></div>
-          <div class="history-row"><strong>2025</strong><p>SoftenPDF</p><p>한국교과서연구재단</p><p>제품을 기반으로 교과용도서 수정/보완 검증 자동화 시스템 고도화</p></div>
-          <div class="history-row"><strong>2024</strong><p>SoftenPDF</p><p>한화오션</p><p>조선 분야 도면 비교 시스템 기능 고도화 및 시리즈 선 자동 비교 연계</p></div>
-          <div class="history-row"><strong>2024</strong><p>SoftenPDF</p><p>한국교과서연구재단</p><p>제품을 기반으로 교과용도서 수정/보완 검증 자동화 시스템 구축</p></div>
-          <div class="history-row"><strong>2024</strong><p>SoftenGANTT</p><p>디와이씨스</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
-          <div class="history-row"><strong>2024</strong><p>SoftenGANTT, SoftenGRID</p><p>삼성전자</p><p>제품들을 기반으로 기술 로드맵 관리 시스템 구축</p></div>
-          <div class="history-row"><strong>2024</strong><p>SoftenPDF</p><p>DY이노베이트</p><p>제품을 사용하여 CAD 전환을 위한 도면 검증</p></div>
-          <div class="history-row"><strong>2023</strong><p>SoftenGANTT</p><p>일흥</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
-          <div class="history-row"><strong>2022</strong><p>SoftenPDF</p><p>대우조선해양</p><p>제품을 기반으로 조선 분야 도면 비교 시스템 구축</p></div>
-          <div class="history-row"><strong>2021</strong><p>SoftenPDF</p><p>삼성SDI</p><p>제품을 기반으로 PLM을 연계하여 도면 비교 자동화 시스템 구축</p></div>
+          <div class="history-row"><strong>2026</strong><p class="highlight">SoftenPDF</p><p>한국교과서연구재단</p><p>교과서 수정/보완 업무 프로세스 연계</p></div>
+          <div class="history-row"><strong>2025</strong><p class="highlight">SoftenGANTT</p><p>경신</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
+          <div class="history-row"><strong>2025</strong><p class="highlight">SoftenPDF</p><p>한국교과서연구재단</p><p>제품을 기반으로 교과용도서 수정/보완 검증 자동화 시스템 고도화</p></div>
+          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenPDF</p><p>한화오션</p><p>조선 분야 도면 비교 시스템 기능 고도화 및 시리즈 선 자동 비교 연계</p></div>
+          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenPDF</p><p>한국교과서연구재단</p><p>제품을 기반으로 교과용도서 수정/보완 검증 자동화 시스템 구축</p></div>
+          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenGANTT</p><p>디와이씨스</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
+          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenGANTT, SoftenGRID</p><p>삼성전자</p><p>제품들을 기반으로 기술 로드맵 관리 시스템 구축</p></div>
+          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenPDF</p><p>DY이노베이트</p><p>제품을 사용하여 CAD 전환을 위한 도면 검증</p></div>
+          <div class="history-row"><strong>2023</strong><p class="highlight">SoftenGANTT</p><p>일흥</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
+          <div class="history-row"><strong>2022</strong><p class="highlight">SoftenPDF</p><p>대우조선해양</p><p>제품을 기반으로 조선 분야 도면 비교 시스템 구축</p></div>
+          <div class="history-row"><strong>2021</strong><p class="highlight">SoftenPDF</p><p>삼성SDI</p><p>제품을 기반으로 PLM을 연계하여 도면 비교 자동화 시스템 구축</p></div>
         </div>
       </div>
     </section>
@@ -264,6 +270,49 @@
   </footer>
 
   <script>
+    (() => {
+      const header = document.querySelector('header');
+      const button = header?.querySelector('.hamburger');
+      const menu = header?.querySelector('.menu');
+      if (!header || !button || !menu) return;
+
+      const closeMenu = (restoreFocus = false) => {
+        menu.classList.remove('is-open');
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-label', '메뉴 열기');
+        if (restoreFocus) button.focus();
+      };
+
+      const openMenu = () => {
+        menu.classList.add('is-open');
+        button.setAttribute('aria-expanded', 'true');
+        button.setAttribute('aria-label', '메뉴 닫기');
+      };
+
+      button.addEventListener('click', () => {
+        if (button.getAttribute('aria-expanded') === 'true') closeMenu();
+        else openMenu();
+      });
+
+      menu.addEventListener('click', (event) => {
+        if (event.target.closest('a')) closeMenu();
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!header.contains(event.target)) closeMenu();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') {
+          closeMenu(true);
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 920) closeMenu();
+      });
+    })();
+
     (() => {
       const slider = document.querySelector('.hero-slider');
       if (!slider) return;
