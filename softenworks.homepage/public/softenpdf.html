@@ -1,22 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="SoftenWORKS는 복잡한 업무를 부드럽고 명확하게 만드는 엔터프라이즈 소프트웨어 제품을 제공합니다." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SoftenPDF는 PDF 문서·도면·이미지의 차이를 빠르고 정확하게 찾아내고 검토 업무를 자동화하는 웹 기반 비교 솔루션입니다.">
+  <meta name="theme-color" content="#071526">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SoftenPDF | PDF 비교 자동화 솔루션">
+  <meta property="og:description" content="문서와 도면의 변경 사항을 빠르게 찾고, 검토하고, 업무 시스템과 연결하세요.">
   <title>대기업들이 채택한 PDF 비교 솔루션 - SoftenPDF</title>
   <link href="css/softenworks.css" rel="stylesheet">
   <link href="css/softenpdf.css" rel="stylesheet">
-  <style>
-  </style>
 </head>
-<body>
+<body class="product-detail-page">
+  <a class="skip-link" href="#content">본문으로 바로가기</a>
+
   <header>
     <div class="container nav">
-      <a href="index.html" class="brand" aria-label="SoftenWORKS home" title="Home">
-      	<img width="240" height="48" src="img/softenworks-logo.svg"/>
+      <a href="index.html" class="brand" aria-label="SoftenWORKS 홈" title="SoftenWORKS 홈">
+        <img width="240" height="48" src="img/softenworks-logo.svg" alt="SoftenWORKS">
       </a>
-      <nav id="main-menu" class="menu" aria-label="Main navigation">
+      <nav id="main-menu" class="menu" aria-label="SoftenPDF 주요 메뉴">
         <a href="index.html#about">회사소개</a>
         <a href="index.html#products">제품소개</a>
         <a href="index.html#business">사업영역</a>
@@ -24,14 +28,12 @@
         <a class="cta" href="index.html#contact">Contact</a>
       </nav>
       <button class="hamburger" type="button" aria-label="메뉴 열기" aria-controls="main-menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </div>
   </header>
 
-  <main id="top">
+  <main id="content">
     <section class="pdf-hero" aria-labelledby="pdf-title">
       <div class="pdf-hero-media" aria-hidden="true"></div>
       <div class="pdf-hero-overlay" aria-hidden="true"></div>
@@ -43,136 +45,254 @@
 
     <nav class="section-nav" aria-label="페이지 바로가기">
       <div class="container">
-        <a href="#overview">Overview</a><a href="#features">Features</a><a href="#cases">References</a><a href="#customers">Customers</a><a href="#whats-new">What's New</a>
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#cases">References</a>
+        <a href="#customers">Customers</a>
+        <a href="#whats-new">What's New</a>
       </div>
     </nav>
 
-    <section id="overview" class="pdf-overview">
+    <section id="overview" class="pdf-overview" aria-labelledby="overview-title">
       <div class="container">
-        <p class="kicker">OVERVIEW</p>
+        <p class="section-kicker">OVERVIEW</p>
         <div class="overview-intro">
           <div>
-            <h2>웹기반 PDF 문서/도면/이미지 비교</h2>
-            <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; padding: 3%;">
-	            <iframe style="width: 100%; height: 100%; min-width: 280px; min-height: 157px; border: 0; border-radius: 6px;"
-							src="https://www.youtube.com/embed/79BWF69uKCo" allowfullscreen></iframe>
-			</div>
+            <h2 id="overview-title">웹기반 <br>PDF 문서/도면 <br>비교 솔루션</h2>
           </div>
           <div class="overview-copy">
-            <p class="overview-lead">SoftenPDF는 PDF 문서 및 도면을 비교하는 웹 기반 전문 솔루션입니다.</p>
-            <ul class="list circle">
-            	<li>독자적인 자체 알고리즘을 통한 빠른 이미지 비교 및 차이점 표시</li>
-            	<li>텍스트 추출 및 텍스트 기반 Diff 알고리즘을 통한 차이 도출/표시</li>
-            	<li>각종 옵션을 제공하여 불필요한 차이점 제외 및 각종 효과 반영</li>
-            </ul>
+            <iframe style="width: 100%; height: 100%; min-width: 280px; min-height: 157px; border: 0; border-radius: 6px;"
+				src="https://www.youtube.com/embed/79BWF69uKCo" allowfullscreen></iframe>
           </div>
         </div>
+
+        <div class="capability-strip">
+          <div><span>01</span><strong>WEB BASED</strong><p>브라우저에서 사용하는 중앙 집중형 비교 환경</p></div>
+          <div><span>02</span><strong>PDF &amp; IMAGE</strong><p>문서·도면·이미지 중심 PDF 비교</p></div>
+          <div><span>03</span><strong>VISUAL REVIEW</strong><p>차이 영역 강조와 빠른 순차 탐색</p></div>
+          <div><span>04</span><strong>INTEGRATION</strong><p>API와 업무 프로세스를 통한 시스템 연계</p></div>
+        </div>
+
         <div class="value-grid">
-          <article class="value-card featured"><span class="value-no">01</span><h3>정확한 차이 분석</h3><p>페이지의 텍스트와 이미지, 도면 요소를 분석하여 변경·추가·삭제된 영역을 식별합니다.</p></article>
-          <article class="value-card"><span class="value-no">02</span><h3>직관적인 결과 확인</h3><p>원본과 변경본을 나란히 보거나 중첩하여 결과를 조회하고, 차이 영역을 빠르게 탐색합니다.</p></article>
-          <article class="value-card"><span class="value-no">03</span><h3>비교 차이점 요약</h3><p>텍스트 및 이미지의 차이점을 Before/After 목록으로 비교 결과 목록을 제공합니다.</p></article>
-          <article class="value-card"><span class="value-no">04</span><h3>기업 시스템 연계</h3><p>PLM, 문서관리, 업무 프로세스 등 기존 시스템과 연계해 자동 비교 업무를 구성할 수 있습니다.</p></article>
+          <article class="value-card featured">
+            <span class="value-no">01</span>
+            <h3>정확한 차이 분석</h3>
+            <p>페이지의 텍스트, 이미지와 시각 요소를 분석하여 추가·삭제·변경된 영역을 식별합니다.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-no">02</span>
+            <h3>직관적인 결과 확인</h3>
+            <p>원본과 변경본을 나란히 보거나 중첩하여 결과를 조회하고, 차이가 발생한 위치를 빠르게 탐색합니다.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-no">03</span>
+            <h3>비교 차이점 요약</h3>
+            <p>텍스트 및 이미지의 차이점을 Before/After 목록으로 비교 결과 목록을 제공합니다.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-no">04</span>
+            <h3>기존 시스템 연계</h3>
+            <p>PLM/ALM, CMS/DMS, CDM, 업무 프로세스 등 레거시 업무 시스템과 연계하여 비교/검증을 자동화할 수 있습니다.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="features" class="pdf-features">
+    <section id="features" class="pdf-features" aria-labelledby="features-title">
       <div class="container">
-        <p class="kicker">FEATURES</p>
+        <p class="section-kicker">FEATURES</p>
         <div class="section-head light-head">
-          <h2>주요 기능</h2>
-          <p>문서 업로드부터 비교, 결과 확인과 리포팅까지 실제 검증 업무에 필요한 기능을 제공합니다.</p>
+          <h2 id="features-title">주요 기능</h2>
+          <p>비교 대상 등록부터 결과 검토와 시스템 연계까지, 실제 문서 검증 업무에 필요한 흐름을 하나로 연결합니다.</p>
         </div>
+
         <div class="feature-list">
           <article class="feature-row">
-            <div class="feature-index">01</div>
-            <div class="feature-copy"><p class="feature-tag">COMPARE DESIGN / IMAGE</p><h3>PDF로 배포된 도면 및 이미지를 비교하세요.</h3><p>두 PDF의 페이지를 대응시키고 텍스트, 이미지 및 시각 요소의 차이를 분석합니다. 일반 문서뿐 아니라 복잡한 도면과 이미지 중심 PDF에도 적용할 수 있습니다.</p><ul><li>페이지 단위 자동 비교</li><li>추가·삭제·변경 영역 식별</li><li>문서 및 도면 비교 지원</li></ul></div>
-            <div class="feature-graphic compare-graphic"><div class="small-page left-page"></div><div class="scan-line"></div><div class="small-page right-page"><i></i></div></div>
+            <div class="feature-copy">
+              <div class="feature-heading"><span class="feature-index">01</span><p class="feature-tag">COMPARE ENGINE</p></div>
+              <h3>PDF 문서·도면 비교</h3>
+              <p>두 PDF의 페이지를 대응시키고 텍스트, 이미지와 시각 요소의 차이를 분석합니다. 일반 문서뿐 아니라 복잡한 도면과 이미지 중심 PDF에도 적용할 수 있습니다.</p>
+              <ul><li>페이지 단위 자동 비교</li><li>추가·삭제·변경 영역 식별</li><li>문서·도면·이미지 비교</li></ul>
+            </div>
+            <div class="feature-graphic compare-graphic" aria-hidden="true">
+              <div class="small-page left-page"><span></span><span></span><span></span></div>
+              <div class="scan-line"></div>
+              <div class="small-page right-page"><span></span><span></span><span></span><i></i></div>
+            </div>
           </article>
-          <article class="feature-row">
-            <div class="feature-index">02</div>
-            <div class="feature-copy"><p class="feature-tag">SMART VIEWER</p><h3>차이 영역 탐색과 시각화</h3><p>비교 결과를 한눈에 파악하고 변경 영역으로 즉시 이동할 수 있습니다. 확대·축소와 페이지 이동을 통해 세부 차이를 효율적으로 검토합니다.</p><ul><li>Before / After 동시 보기</li><li>중첩 및 차이 강조 보기</li><li>차이점 순차 탐색</li></ul></div>
-            <div class="feature-graphic viewer-graphic"><div class="viewer-side"><span></span><span></span><span class="active"></span><span></span></div><div class="viewer-main"><i></i><b></b><em></em></div></div>
+
+          <article class="feature-row reverse">
+            <div class="feature-copy">
+              <div class="feature-heading"><span class="feature-index">02</span><p class="feature-tag">SMART VIEWER</p></div>
+              <h3>차이 영역 탐색과 시각화</h3>
+              <p>비교 결과를 한눈에 파악하고 변경 영역으로 즉시 이동할 수 있습니다. 확대·축소와 페이지 이동을 이용해 세부 차이를 효율적으로 검토합니다.</p>
+              <ul><li>Before / After 동시 보기</li><li>중첩·차이 강조 보기</li><li>차이점 순차 탐색</li></ul>
+            </div>
+            <div class="feature-graphic viewer-graphic" aria-hidden="true">
+              <div class="viewer-top"><i></i><i></i><i></i></div>
+              <div class="viewer-side"><span></span><span></span><span class="active"></span><span></span></div>
+              <div class="viewer-main"><i></i><b></b><em></em></div>
+            </div>
           </article>
+
           <article class="feature-row">
-            <div class="feature-index">03</div>
-            <div class="feature-copy"><p class="feature-tag">SUMMARY & REPORT</p><h3>비교 결과 요약과 리포팅</h3><p>페이지별 차이 개수와 검토 결과를 요약하여 확인하고, 업무 목적에 맞는 결과 자료로 활용할 수 있습니다.</p><ul><li>페이지별 비교 결과 Summary</li><li>변경 영역 이미지 제공</li><li>검토 결과 공유 및 이력 활용</li></ul></div>
-            <div class="feature-graphic report-graphic"><div class="chart-ring"><strong>87%</strong></div><div class="chart-bars"><span></span><span></span><span></span><span></span></div></div>
+            <div class="feature-copy">
+              <div class="feature-heading"><span class="feature-index">03</span><p class="feature-tag">SUMMARY &amp; REPORT</p></div>
+              <h3>비교 결과 요약과 활용</h3>
+              <p>페이지별 차이 개수와 검토 상태를 요약하고, 변경 영역 이미지와 결과 정보를 후속 검증 업무와 이력 관리에 활용할 수 있습니다.</p>
+              <ul><li>페이지별 결과 Summary</li><li>변경 영역 이미지 제공</li><li>검토 결과 공유·이력 활용</li></ul>
+            </div>
+            <div class="feature-graphic report-graphic" aria-hidden="true">
+              <div class="chart-ring"><strong>87%</strong></div>
+              <div class="chart-summary"><span>Comparison Summary</span><strong>24 Differences</strong><i></i><i></i><i></i></div>
+            </div>
           </article>
-          <article class="feature-row">
-            <div class="feature-index">04</div>
-            <div class="feature-copy"><p class="feature-tag">ENTERPRISE INTEGRATION</p><h3>업무 시스템 연계 및 자동화</h3><p>단독 웹 솔루션으로 사용하거나 기업의 문서 관리 및 검증 프로세스에 연결해 업로드, 비교 실행, 결과 저장을 자동화할 수 있습니다.</p><ul><li>웹 기반 중앙 서비스</li><li>업무 프로세스 및 시스템 연계</li><li>다수 사용자와 비교 작업 관리</li></ul></div>
-            <div class="feature-graphic integration-graphic"><div class="hub">PDF</div><span class="node n1">PLM</span><span class="node n2">DMS</span><span class="node n3">API</span><span class="node n4">WORKFLOW</span></div>
+
+          <article class="feature-row reverse">
+            <div class="feature-copy">
+              <div class="feature-heading"><span class="feature-index">04</span><p class="feature-tag">ENTERPRISE INTEGRATION</p></div>
+              <h3>업무 시스템 연계와 자동화</h3>
+              <p>독립형 웹 솔루션으로 사용하거나 기업의 문서 관리·설계·검증 프로세스에 연결해 업로드, 비교 실행과 결과 저장을 자동화할 수 있습니다.</p>
+              <ul><li>웹 기반 중앙 서비스</li><li>업무 프로세스 연계</li><li>다수 사용자·작업 관리</li></ul>
+            </div>
+            <div class="feature-graphic integration-graphic" aria-hidden="true">
+              <div class="connector c1"></div><div class="connector c2"></div><div class="connector c3"></div><div class="connector c4"></div>
+              <div class="hub">PDF</div>
+              <span class="node n1">PLM</span><span class="node n2">DMS</span><span class="node n3">API</span><span class="node n4">WORKFLOW</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="cases" class="pdf-cases">
+    <section id="cases" class="pdf-cases" aria-labelledby="cases-title">
       <div class="container">
-        <p class="kicker">REFERENCES</p>
-        <div class="section-head"><h2>구축 사례</h2><p>문서와 도면의 정확한 검증이 필요한 다양한 산업 현장에서 SoftenPDF가 활용되고 있습니다.</p></div>
+        <p class="section-kicker">REFERENCES</p>
+        <div class="section-head">
+          <h2 id="cases-title">구축 사례</h2>
+          <p>문서와 도면을 정확하게 검증해야 하는 교육, 조선과 제조 현장의 업무에 SoftenPDF를 적용했습니다.</p>
+        </div>
+
         <div class="case-grid">
-          <article class="case-card case-large"><div class="case-meta"><span>EDUCATION · 2024—2026</span><strong>한국교과서연구재단</strong></div><h3>교과용도서 수정·보완<br>검증 자동화 시스템</h3><p>교과서 원본과 수정본의 변경 내용을 자동 비교하고 검증 업무 프로세스와 연계하여, 반복적인 육안 검토 부담을 줄이고 검증 업무의 일관성을 높였습니다.</p><ul><li>교과서 PDF 자동 비교</li><li>수정·보완 업무 프로세스 연계</li><li>검증 결과 관리 및 고도화</li></ul></article>
-          <article class="case-card"><div class="case-meta"><span>SHIPBUILDING · 2022, 2024</span><strong>대우조선해양 · 한화오션</strong></div><h3>조선 도면 비교 시스템</h3><p>복잡한 조선 분야 도면의 변경 사항을 비교하고, 시리즈 선 도면 검증 업무까지 연계·고도화했습니다.</p></article>
-          <article class="case-card"><div class="case-meta"><span>MANUFACTURING · 2021</span><strong>삼성SDI</strong></div><h3>PLM 연계 도면 비교 자동화</h3><p>PLM 업무와 SoftenPDF를 연계하여 설계 도면의 변경 검증 절차를 자동화했습니다.</p></article>
-          <article class="case-card"><div class="case-meta"><span>CAD CONVERSION · 2024</span><strong>DY이노베이트</strong></div><h3>CAD 전환 도면 검증</h3><p>CAD 전환 전후의 PDF 도면을 비교하여 변환 과정에서 발생할 수 있는 차이를 검증했습니다.</p></article>
+          <article class="case-card case-large">
+            <div class="case-meta"><span>EDUCATION · 2024—2026</span><strong>한국교과서연구재단</strong></div>
+            <div class="case-content"><h3>교과용도서 수정·보완<br>검증 자동화 시스템</h3><p>교과서 원본과 수정본의 변경 내용을 자동 비교하고 수정·보완 업무 프로세스와 연계해 반복 검토와 결과 관리 업무를 지원합니다.</p><ul><li>교과서 PDF 자동 비교</li><li>수정·보완 프로세스 연계</li><li>검증 결과 관리·고도화</li></ul></div>
+          </article>
+          <article class="case-card">
+            <div class="case-meta"><span>SHIPBUILDING · 2022, 2024</span><strong>대우조선해양 · 한화오션</strong></div>
+            <h3>조선 도면 비교 시스템</h3>
+            <p>복잡한 조선 도면의 변경 내용을 비교하고 시리즈 선 도면 검증 업무까지 연계·고도화했습니다.</p>
+          </article>
+          <article class="case-card">
+            <div class="case-meta"><span>MANUFACTURING · 2021</span><strong>삼성SDI</strong></div>
+            <h3>PLM 연계 도면 비교 자동화</h3>
+            <p>PLM 업무와 SoftenPDF를 연계하여 설계 도면의 변경 검증 절차를 자동화했습니다.</p>
+          </article>
+          <article class="case-card">
+            <div class="case-meta"><span>CAD CONVERSION · 2024</span><strong>DY이노베이트</strong></div>
+            <h3>CAD 전환 도면 검증</h3>
+            <p>CAD 전환 전후의 PDF 도면을 비교하여 변환 과정에서 발생할 수 있는 차이를 검증했습니다.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="customers" class="pdf-customers">
+    <section id="customers" class="pdf-customers" aria-labelledby="customers-title">
       <div class="container">
-        <p class="kicker">CUSTOMERS</p>
-        <div class="section-head"><h2>고객 및 협력사</h2><p>다양한 산업 분야의 고객과 함께 문서·도면 검증 업무를 개선하고 있습니다.</p></div>
-        <div class="logo-grid" aria-label="주요 고객 목록">
-          <div><span>KTRF</span><strong>한국교과서연구재단</strong></div><div><span>HANWHA</span><strong>한화오션</strong></div><div><span>DSME</span><strong>대우조선해양</strong></div><div><span>SAMSUNG</span><strong>삼성SDI</strong></div><div><span>DY</span><strong>DY이노베이트</strong></div><div class="partner-placeholder"><span>PARTNER</span><strong>협력사 정보 추가</strong></div>
+        <p class="section-kicker">CUSTOMERS</p>
+        <div class="section-head">
+          <h2 id="customers-title">고객 및 협력사</h2>
+          <p>다양한 산업 분야의 고객과 함께 문서·도면 검증 업무를 더 정확하고 효율적인 흐름으로 개선하고 있습니다.</p>
         </div>
-        <p class="draft-note dark-note">※ 실제 CI 로고 사용 시 고객사·협력사의 로고 사용 승인과 최신 BI 가이드 확인이 필요합니다. 현재 시안은 텍스트 기반으로 구성했습니다.</p>
+
+        <div class="logo-grid">
+          <div><span>KTRF</span><strong>한국교과서연구재단</strong></div>
+          <div><span>HANWHA</span><strong>한화오션</strong></div>
+          <div><span>DSME</span><strong>대우조선해양</strong></div>
+          <div><span>SAMSUNG</span><strong>삼성SDI</strong></div>
+          <div><span>DY</span><strong>DY이노베이트</strong></div>
+          <div class="partner-placeholder"><span>PARTNER</span><strong>협력사 CI 추가 영역</strong></div>
+        </div>
+        <p class="draft-note dark-note">※ 현재는 텍스트 기반 시안입니다. 실제 CI 적용 전 고객사·협력사의 로고 사용 승인과 최신 BI 가이드를 확인해 주세요.</p>
       </div>
     </section>
 
-    <section class="pdf-fit">
+    <section class="pdf-fit" aria-labelledby="fit-title">
       <div class="container fit-grid">
-        <div><div class="eyebrow">BEST FIT FOR YOUR WORK</div><h2>이런 업무에<br>SoftenPDF가 필요합니다.</h2></div>
-        <ul><li>문서 개정 전후의 변경 사항을 반복적으로 확인하는 업무</li><li>설계 도면의 수정·변환 결과를 정확히 검증해야 하는 업무</li><li>다량의 PDF를 정해진 기준으로 비교하고 이력을 남겨야 하는 업무</li><li>기존 PLM·DMS·업무 시스템에 PDF 비교 기능을 연계하려는 조직</li></ul>
+        <div><div class="eyebrow">BEST FIT FOR YOUR WORK</div><h2 id="fit-title">이런 업무에<br>SoftenPDF가 필요합니다.</h2></div>
+        <ul>
+          <li>문서 개정 전후의 변경 사항을 반복적으로 확인하는 업무</li>
+          <li>설계 도면의 수정·변환 결과를 정확히 검증해야 하는 업무</li>
+          <li>다량의 PDF를 정해진 기준으로 비교하고 이력을 남겨야 하는 업무</li>
+          <li>기존 PLM·DMS·업무 시스템에 PDF 비교 기능을 연계하려는 조직</li>
+        </ul>
       </div>
     </section>
 
-    <section id="whats-new" class="pdf-whats-new">
+    <section id="whats-new" class="pdf-whats-new" aria-labelledby="whats-new-title">
       <div class="container">
-        <p class="kicker">WHAT'S NEW</p>
-        <div class="section-head light-head"><h2>What's New</h2><p>SoftenPDF는 실제 현장의 검증 요구를 반영하여 비교 정확도와 업무 편의성을 지속적으로 개선합니다.</p></div>
+        <p class="section-kicker">WHAT'S NEW</p>
+        <div class="section-head light-head">
+          <h2 id="whats-new-title">What's New</h2>
+          <p>현장의 검증 요구를 반영하여 비교 품질, 대용량 처리 안정성과 업무 편의성을 지속적으로 개선합니다.</p>
+        </div>
+
         <div class="release-layout">
-          <div class="release-tabs" role="tablist" aria-label="버전 선택">
-            <button class="release-tab active" type="button" data-release="release-current">Latest</button>
-            <button class="release-tab" type="button" data-release="release-2025">2025</button>
-            <button class="release-tab" type="button" data-release="release-2024">2024</button>
+          <div class="release-tabs" role="tablist" aria-label="업데이트 시기 선택">
+            <button id="tab-current" class="release-tab active" type="button" role="tab" aria-selected="true" aria-controls="release-current" tabindex="0" data-release="release-current">Latest</button>
+            <button id="tab-2025" class="release-tab" type="button" role="tab" aria-selected="false" aria-controls="release-2025" tabindex="-1" data-release="release-2025">2025</button>
+            <button id="tab-2024" class="release-tab" type="button" role="tab" aria-selected="false" aria-controls="release-2024" tabindex="-1" data-release="release-2024">2024</button>
           </div>
+
           <div class="release-panels">
-            <article id="release-current" class="release-panel active"><div class="release-version"><span>Current</span><strong>Latest Release</strong><p>정확한 버전명과 배포일을 확인한 뒤 교체할 수 있도록 구성한 최신 릴리스 영역입니다.</p></div><ul><li><strong>비교 엔진 개선</strong><span>복잡한 PDF와 대용량 문서에 대한 처리 안정성 및 비교 품질 개선</span></li><li><strong>Viewer 사용성 향상</strong><span>차이 영역 탐색과 결과 확인을 위한 사용자 인터페이스 개선</span></li><li><strong>업무 연계 확장</strong><span>외부 시스템과 비교 프로세스를 연계하기 위한 기능 강화</span></li></ul></article>
-            <article id="release-2025" class="release-panel"><div class="release-version"><span>2025</span><strong>2025 Updates</strong><p>한국교과서연구재단 검증 자동화 시스템 고도화 경험을 반영한 개선 내역을 정리할 수 있습니다.</p></div><ul><li><strong>검증 프로세스 고도화</strong><span>수정·보완 업무 흐름과 비교 결과 활용 기능 확장</span></li><li><strong>대량 비교 업무 지원</strong><span>다수 문서의 비교 작업과 결과 관리 편의성 개선</span></li><li><strong>운영 안정성 개선</strong><span>장시간 비교와 대용량 파일 처리 안정성 강화</span></li></ul></article>
-            <article id="release-2024" class="release-panel"><div class="release-version"><span>2024</span><strong>2024 Updates</strong><p>도면 및 교과용도서 비교 구축 경험을 기반으로 업무 적용 범위를 확장했습니다.</p></div><ul><li><strong>도면 비교 기능 개선</strong><span>조선 분야 도면과 시리즈 선 검증 업무 적용</span></li><li><strong>문서 비교 업무 확장</strong><span>교과용도서 수정·보완 검증 자동화 적용</span></li><li><strong>업무 시스템 연계</strong><span>비교 결과를 기존 검증 프로세스와 연동</span></li></ul></article>
+            <article id="release-current" class="release-panel active" role="tabpanel" aria-labelledby="tab-current">
+              <div class="release-version"><span>CURRENT RELEASE</span><strong>Latest Update</strong><p>운영 환경에서의 비교 안정성과 결과 검토 편의성을 중심으로 개선합니다.</p></div>
+              <ul>
+                <li><strong>비교 엔진 개선</strong><span>복잡한 PDF와 대용량 문서의 처리 안정성 및 비교 품질 개선</span></li>
+                <li><strong>Viewer 사용성 향상</strong><span>차이 영역 이동, 확대·축소와 결과 확인 인터페이스 개선</span></li>
+                <li><strong>업무 연계 확장</strong><span>외부 시스템과 비교 프로세스를 연결하기 위한 연계 기능 강화</span></li>
+              </ul>
+            </article>
+
+            <article id="release-2025" class="release-panel" role="tabpanel" aria-labelledby="tab-2025" hidden>
+              <div class="release-version"><span>2025 UPDATES</span><strong>Process &amp; Scale</strong><p>교과용도서 검증 자동화 고도화 경험을 반영해 대량 비교와 결과 관리 흐름을 확장했습니다.</p></div>
+              <ul>
+                <li><strong>검증 프로세스 고도화</strong><span>수정·보완 업무 흐름과 비교 결과 활용 기능 확장</span></li>
+                <li><strong>대량 비교 업무 지원</strong><span>다수 문서의 비교 작업과 결과 관리 편의성 개선</span></li>
+                <li><strong>운영 안정성 개선</strong><span>장시간 비교 및 대용량 파일 처리 안정성 강화</span></li>
+              </ul>
+            </article>
+
+            <article id="release-2024" class="release-panel" role="tabpanel" aria-labelledby="tab-2024" hidden>
+              <div class="release-version"><span>2024 UPDATES</span><strong>Industry Expansion</strong><p>도면과 교과용도서 비교 구축 경험을 기반으로 업무 적용 범위를 확장했습니다.</p></div>
+              <ul>
+                <li><strong>도면 비교 기능 개선</strong><span>조선 분야 도면과 시리즈 선 검증 업무 적용</span></li>
+                <li><strong>문서 비교 업무 확장</strong><span>교과용도서 수정·보완 검증 자동화 적용</span></li>
+                <li><strong>업무 시스템 연계</strong><span>비교 실행과 결과를 기존 검증 프로세스에 연동</span></li>
+              </ul>
+            </article>
           </div>
         </div>
-        <p class="draft-note">※ 버전명, 배포일 및 세부 변경 사항은 실제 릴리스 이력 확인 후 최종 문구로 교체하는 것을 권장합니다.</p>
+        <p class="draft-note">※ 실제 제품 버전 번호, 배포일과 세부 변경 사항은 릴리스 노트 확정 후 이 영역의 제목과 문구만 교체하면 됩니다.</p>
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact pdf-contact" aria-labelledby="contact-title">
       <div class="container">
         <div class="contact-box">
           <div>
-            <h2>CONTACT US</h2>
-            <p>제품 도입, 기술/영업 협업, 구축 문의가 필요하시면 SoftenWORKS에 연락해 주세요.</p>
+            <div class="eyebrow">CONTACT SOFTENWORKS</div>
+            <h2 id="contact-title">SoftenPDF 도입을<br>검토하고 계신가요?</h2>
+            <p>적용 대상 문서와 업무 환경을 알려주시면 데모와 시스템 연계·구축 방안을 함께 검토해 드립니다.</p>
             <div class="hero-actions">
-              <a class="btn primary" href="mailto:contact@softenworks.com">문의 메일 보내기</a>
+              <a class="btn primary" href="mailto:contact@softenworks.com?subject=SoftenPDF%20도입%20문의">도입 문의하기</a>
+              <a class="btn secondary" href="index.html">회사 홈페이지</a>
             </div>
           </div>
           <div class="contact-list">
+            <div><strong>Product</strong>SoftenPDF</div>
             <div><strong>Email</strong>contact@softenworks.com<br>support@softenworks.com</div>
-            <div><strong>Phone</strong>+82 031-222-2222</div>
-            <div><strong>Address</strong>서울특별시 ○○구 ○○로 00</div>
+            <div><strong>Consulting</strong>제품 도입 · 시스템 연계 · 구축 상담</div>
             <div><strong>Business Hours</strong>Mon - Fri, 09:00 - 18:00</div>
           </div>
         </div>
@@ -181,112 +301,140 @@
   </main>
 
   <footer>
-    <div class="container">
-      <div>© 2026 SoftenWORKS. All rights reserved.</div>
-      <div>Less friction. More flow.</div>
-    </div>
+    <div class="container"><div>© 2026 SoftenWORKS. All rights reserved.</div><div><a href="index.html">SoftenWORKS</a> · SoftenPDF</div></div>
   </footer>
 
   <script>
     (() => {
       const header = document.querySelector('header');
-      const button = header?.querySelector('.hamburger');
-      const menu = header?.querySelector('.menu');
+      const button = document.querySelector('.hamburger');
+      const menu = document.querySelector('#main-menu');
       if (!header || !button || !menu) return;
 
-      const closeMenu = (restoreFocus = false) => {
+      const closeMenu = (focusButton = false) => {
         menu.classList.remove('is-open');
         button.setAttribute('aria-expanded', 'false');
         button.setAttribute('aria-label', '메뉴 열기');
-        if (restoreFocus) button.focus();
-      };
-
-      const openMenu = () => {
-        menu.classList.add('is-open');
-        button.setAttribute('aria-expanded', 'true');
-        button.setAttribute('aria-label', '메뉴 닫기');
+        if (focusButton) button.focus();
       };
 
       button.addEventListener('click', () => {
-        if (button.getAttribute('aria-expanded') === 'true') closeMenu();
-        else openMenu();
+        const willOpen = button.getAttribute('aria-expanded') !== 'true';
+        menu.classList.toggle('is-open', willOpen);
+        button.setAttribute('aria-expanded', String(willOpen));
+        button.setAttribute('aria-label', willOpen ? '메뉴 닫기' : '메뉴 열기');
       });
+      menu.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+      document.addEventListener('click', event => { if (!header.contains(event.target)) closeMenu(); });
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(true); });
+      window.addEventListener('resize', () => { if (window.innerWidth > 920) closeMenu(); });
+    })();
 
-      menu.addEventListener('click', (event) => {
-        if (event.target.closest('a')) closeMenu();
-      });
+    (() => {
+      const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+      const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+      if (!tabs.length) return;
 
-      document.addEventListener('click', (event) => {
-        if (!header.contains(event.target)) closeMenu();
-      });
+      const activate = tab => {
+        tabs.forEach(item => {
+          const selected = item === tab;
+          item.classList.toggle('active', selected);
+          item.setAttribute('aria-selected', String(selected));
+          item.tabIndex = selected ? 0 : -1;
+        });
+        panels.forEach(panel => {
+          const selected = panel.id === tab.dataset.release;
+          panel.classList.toggle('active', selected);
+          panel.hidden = !selected;
+        });
+      };
 
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') {
-          closeMenu(true);
-        }
-      });
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth > 920) closeMenu();
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activate(tab));
+        tab.addEventListener('keydown', event => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          let nextIndex = index;
+          if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+          if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === 'Home') nextIndex = 0;
+          if (event.key === 'End') nextIndex = tabs.length - 1;
+          activate(tabs[nextIndex]);
+          tabs[nextIndex].focus();
+        });
       });
     })();
 
     (() => {
-      const slider = document.querySelector('.hero-slider');
-      if (!slider) return;
+    	const links = Array.from(document.querySelectorAll('.section-nav a'));
+    	const sections = links
+    		.map(link => document.querySelector(link.getAttribute('href')))
+    		.filter(Boolean);
 
-      const track = slider.querySelector('.hero-track');
-      const slides = Array.from(slider.querySelectorAll('.hero-slide'));
-      const dots = Array.from(slider.querySelectorAll('.hero-dot'));
-      const prev = slider.querySelector('.hero-prev');
-      const next = slider.querySelector('.hero-next');
-      const interval = Number(slider.dataset.autoplay || 6000);
-      let current = 0;
-      let timer = null;
+    	const header = document.querySelector('header');
+    	const sectionNav = document.querySelector('.section-nav');
 
-      const showSlide = (index) => {
-        current = (index + slides.length) % slides.length;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        dots.forEach((dot, i) => {
-          dot.classList.toggle('active', i === current);
-          dot.setAttribute('aria-current', i === current ? 'true' : 'false');
-        });
-      };
+    	if (!sections.length || !sectionNav)
+    		return;
 
-      const start = () => {
-        stop();
-        timer = window.setInterval(() => showSlide(current + 1), interval);
-      };
+    	let ticking = false;
 
-      const stop = () => {
-        if (timer) window.clearInterval(timer);
-      };
+    	const updateActiveSection = () => {
+    		const fixedHeight =
+    			(header?.offsetHeight || 0) + sectionNav.offsetHeight;
 
-      prev.addEventListener('click', () => { showSlide(current - 1); start(); });
-      next.addEventListener('click', () => { showSlide(current + 1); start(); });
-      dots.forEach((dot, index) => dot.addEventListener('click', () => { showSlide(index); start(); }));
+    		const marker = window.scrollY + fixedHeight + 24;
+    		let current = sections[0];
 
-      ['mouseenter', 'mousemove', 'click', 'touchstart'].forEach(event =>
-          slider.addEventListener(event, stop)
-      );
-      slider.addEventListener('mouseleave', start);
-      slider.addEventListener('focusin', stop);
-      slider.addEventListener('focusout', start);
+    		sections.forEach(section => {
+    			if (section.offsetTop <= marker)
+    				current = section;
+    		});
 
-      let touchStartX = 0;
-      slider.addEventListener('touchstart', (event) => {
-        touchStartX = event.changedTouches[0].screenX;
-      }, { passive: true });
-      slider.addEventListener('touchend', (event) => {
-        const diff = event.changedTouches[0].screenX - touchStartX;
-        if (Math.abs(diff) > 50) {
-          showSlide(diff < 0 ? current + 1 : current - 1);
-          start();
-        }
-      }, { passive: true });
+    		if (
+    			window.innerHeight + window.scrollY
+    			>= document.documentElement.scrollHeight - 2
+    		) {
+    			current = sections[sections.length - 1];
+    		}
 
-      showSlide(0);
-      start();
+    		links.forEach(link => {
+    			const active =
+    				link.getAttribute('href') === `#${current.id}`;
+
+    			link.classList.toggle('active', active);
+
+    			if (active)
+    				link.setAttribute('aria-current', 'location');
+    			else
+    				link.removeAttribute('aria-current');
+    		});
+
+    		ticking = false;
+    	};
+
+    	const requestUpdate = () => {
+    		if (ticking)
+    			return;
+
+    		ticking = true;
+    		window.requestAnimationFrame(updateActiveSection);
+    	};
+
+    	window.addEventListener('scroll', requestUpdate, {
+    		passive: true
+    	});
+
+    	window.addEventListener('resize', requestUpdate);
+    	window.addEventListener('load', requestUpdate);
+
+    	links.forEach(link => {
+    		link.addEventListener('click', () => {
+    			window.setTimeout(requestUpdate, 80);
+    		});
+    	});
+
+    	updateActiveSection();
     })();
   </script>
 </body>
