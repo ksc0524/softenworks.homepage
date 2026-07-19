@@ -11,6 +11,7 @@
   <title>대기업들이 채택한 PDF 비교 솔루션 - SoftenPDF</title>
   <link href="css/softenworks.css" rel="stylesheet">
   <link href="css/softenpdf.css" rel="stylesheet">
+  <script src="js/release-notes.js" defer></script>
 </head>
 <body class="product-detail-page">
   <a class="skip-link" href="#content">본문으로 바로가기</a>
@@ -249,43 +250,28 @@
           <p>현장의 검증 요구를 반영하여 비교 품질, 대용량 처리 안정성과 업무 편의성을 지속적으로 개선합니다.</p>
         </div>
 
-        <div class="release-layout">
-          <div class="release-tabs" role="tablist" aria-label="업데이트 시기 선택">
-            <button id="tab-current" class="release-tab active" type="button" role="tab" aria-selected="true" aria-controls="release-current" tabindex="0" data-release="release-current">Latest</button>
-            <button id="tab-2025" class="release-tab" type="button" role="tab" aria-selected="false" aria-controls="release-2025" tabindex="-1" data-release="release-2025">2025</button>
-            <button id="tab-2024" class="release-tab" type="button" role="tab" aria-selected="false" aria-controls="release-2024" tabindex="-1" data-release="release-2024">2024</button>
+        <div class="release-toolbar">
+          <div class="release-source">
+            <span class="release-source-icon" aria-hidden="true">MD</span>
+            <span>
+              <strong>Release Notes</strong>
+              <small>Markdown 파일에서 최신 변경 사항을 불러옵니다.</small>
+            </span>
           </div>
-
-          <div class="release-panels">
-            <article id="release-current" class="release-panel active" role="tabpanel" aria-labelledby="tab-current">
-              <div class="release-version"><span>CURRENT RELEASE</span><strong>Latest Update</strong><p>운영 환경에서의 비교 안정성과 결과 검토 편의성을 중심으로 개선합니다.</p></div>
-              <ul>
-                <li><strong>비교 엔진 개선</strong><span>복잡한 PDF와 대용량 문서의 처리 안정성 및 비교 품질 개선</span></li>
-                <li><strong>Viewer 사용성 향상</strong><span>차이 영역 이동, 확대·축소와 결과 확인 인터페이스 개선</span></li>
-                <li><strong>업무 연계 확장</strong><span>외부 시스템과 비교 프로세스를 연결하기 위한 연계 기능 강화</span></li>
-              </ul>
-            </article>
-
-            <article id="release-2025" class="release-panel" role="tabpanel" aria-labelledby="tab-2025" hidden>
-              <div class="release-version"><span>2025 UPDATES</span><strong>Process &amp; Scale</strong><p>교과용도서 검증 자동화 고도화 경험을 반영해 대량 비교와 결과 관리 흐름을 확장했습니다.</p></div>
-              <ul>
-                <li><strong>검증 프로세스 고도화</strong><span>수정·보완 업무 흐름과 비교 결과 활용 기능 확장</span></li>
-                <li><strong>대량 비교 업무 지원</strong><span>다수 문서의 비교 작업과 결과 관리 편의성 개선</span></li>
-                <li><strong>운영 안정성 개선</strong><span>장시간 비교 및 대용량 파일 처리 안정성 강화</span></li>
-              </ul>
-            </article>
-
-            <article id="release-2024" class="release-panel" role="tabpanel" aria-labelledby="tab-2024" hidden>
-              <div class="release-version"><span>2024 UPDATES</span><strong>Industry Expansion</strong><p>도면과 교과용도서 비교 구축 경험을 기반으로 업무 적용 범위를 확장했습니다.</p></div>
-              <ul>
-                <li><strong>도면 비교 기능 개선</strong><span>조선 분야 도면과 시리즈 선 검증 업무 적용</span></li>
-                <li><strong>문서 비교 업무 확장</strong><span>교과용도서 수정·보완 검증 자동화 적용</span></li>
-                <li><strong>업무 시스템 연계</strong><span>비교 실행과 결과를 기존 검증 프로세스에 연동</span></li>
-              </ul>
-            </article>
+          <div class="release-toolbar-actions">
+            <span class="release-count" data-release-count>불러오는 중</span>
+            <a class="release-source-link" href="release-notes/softenpdf.md" target="_blank" rel="noopener">Markdown 원문 보기</a>
           </div>
         </div>
-        <p class="draft-note">※ 실제 제품 버전 번호, 배포일과 세부 변경 사항은 릴리스 노트 확정 후 이 영역의 제목과 문구만 교체하면 됩니다.</p>
+
+        <div id="release-notes" class="release-notes is-loading" data-markdown="release-notes/softenpdf.md" aria-live="polite" aria-busy="true">
+          <div class="release-skeleton" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <noscript>
+            <p class="release-error">릴리즈 노트를 확인하려면 JavaScript를 활성화하거나 <a href="release-notes/softenpdf.md">Markdown 원문</a>을 열어 주세요.</p>
+          </noscript>
+        </div>
       </div>
     </section>
 
@@ -340,41 +326,6 @@
       document.addEventListener('click', event => { if (!header.contains(event.target)) closeMenu(); });
       document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(true); });
       window.addEventListener('resize', () => { if (window.innerWidth > 920) closeMenu(); });
-    })();
-
-    (() => {
-      const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
-      const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
-      if (!tabs.length) return;
-
-      const activate = tab => {
-        tabs.forEach(item => {
-          const selected = item === tab;
-          item.classList.toggle('active', selected);
-          item.setAttribute('aria-selected', String(selected));
-          item.tabIndex = selected ? 0 : -1;
-        });
-        panels.forEach(panel => {
-          const selected = panel.id === tab.dataset.release;
-          panel.classList.toggle('active', selected);
-          panel.hidden = !selected;
-        });
-      };
-
-      tabs.forEach((tab, index) => {
-        tab.addEventListener('click', () => activate(tab));
-        tab.addEventListener('keydown', event => {
-          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-          event.preventDefault();
-          let nextIndex = index;
-          if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
-          if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
-          if (event.key === 'Home') nextIndex = 0;
-          if (event.key === 'End') nextIndex = tabs.length - 1;
-          activate(tabs[nextIndex]);
-          tabs[nextIndex].focus();
-        });
-      });
     })();
 
     (() => {
