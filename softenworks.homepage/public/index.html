@@ -62,7 +62,7 @@
                   <h3 class="hero-company">Soften Series</h3>
                   <p></p>
                   <h2><em>Soften Your Complexity</em></h2>
-                  <p style="margin-top: 0;">PDF 전문 비교, Polarion ALM 플러그인, Template 기반 문서 출력 등 복잡한 업무 현장을 더 쉽고 빠르게 만드는 제품군을 제공합니다.</p>
+                  <p style="margin-top: 0;">PDF 전문 비교, Polarion ALM Gantt 및 Rich Grid 플러그인 등 복잡한 업무 현장을 더 쉽고 빠르게 만드는 제품군을 제공합니다.</p>
                   <div class="hero-actions">
                     <a class="btn primary" href="#products">제품 보기</a>
                     <a class="btn secondary" href="softenpdf.html">SoftenPDF</a>
@@ -70,9 +70,8 @@
                 </div>
                 <div class="hero-panel product-panel" aria-label="SoftenWORKS product cards">
                   <div class="mini-product"><strong>Soften<span>PDF</span></strong><p>웹기반 PDF 도면/문서 비교 자동화 솔루션</p></div>
-                  <div class="mini-product"><strong>Soften<span>GANTT</span></strong><p>ALM 기반 프로젝트 일정 관리 플러그인</p></div>
-                  <div class="mini-product"><strong>Soften<span>GRID</span></strong><p>ALM 기반 워크아이템 Rich Display 플러그인</p></div>
-                  <div class="mini-product"><strong>Soften<span>EXPORT</span></strong><p>MS Word, Excel 템플릿 기반 데이터 출력</p></div>
+                  <div class="mini-product"><strong>Soften<span>GANTT</span></strong><p>ALM 기반 프로젝트 WBS 관리 플러그인</p></div>
+                  <div class="mini-product"><strong>Soften<span>GRID</span></strong><p>Polarion Work Item - Rich Display 플러그인</p></div>
                   <div class="mini-product"><strong>Soften<span>REPORT</span></strong><p>MS PowerPoint 템플릿 기반 데이터 출력</p></div>
                   <div class="mini-product"><strong>Soften<span>FLOW</span></strong><p>웹기반 Workflow 관리 플러그인</p></div>
                 </div>
@@ -370,6 +369,45 @@
       showSlide(0);
       start();
     })();
+    
+    (() => {
+        const header = document.querySelector('header');
+        const menu = document.querySelector('#main-menu');
+        const links = Array.from(menu?.querySelectorAll('a[href^="#"]') || []);
+        const sections = links.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+        if (!header || !links.length || !sections.length) return;
+
+        let ticking = false;
+        const updateActiveMenu = () => {
+          const marker = window.scrollY + header.offsetHeight + 32;
+          let current = null;
+
+          sections.forEach(section => {
+            if (section.offsetTop <= marker) current = section;
+          });
+          if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = sections[sections.length - 1];
+
+          links.forEach(link => {
+            const active = current && link.getAttribute('href') === `#${current.id}`;
+            link.classList.toggle('active', Boolean(active));
+            if (active) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+          });
+          ticking = false;
+        };
+
+        const requestUpdate = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(updateActiveMenu);
+        };
+
+        window.addEventListener('scroll', requestUpdate, { passive: true });
+        window.addEventListener('resize', requestUpdate);
+        window.addEventListener('load', requestUpdate);
+        links.forEach(link => link.addEventListener('click', () => window.setTimeout(requestUpdate, 80)));
+        updateActiveMenu();
+      })();
   </script>
 </body>
 </html>
