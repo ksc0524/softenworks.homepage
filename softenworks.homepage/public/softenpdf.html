@@ -22,7 +22,19 @@
       </a>
       <nav id="main-menu" class="menu" aria-label="SoftenPDF 주요 메뉴">
         <a href="index.html#about">회사소개</a>
-        <a href="index.html#products" class="active">제품소개</a>
+        <div class="menu-item has-submenu">
+          <a class="menu-parent active" href="index.html#products" aria-haspopup="true">
+            제품소개
+            <span class="menu-chevron" aria-hidden="true"></span>
+          </a>
+          <div class="submenu" role="group" aria-label="제품소개 하위 메뉴">
+            <a class="current" href="softenpdf.html" aria-current="page">SoftenPDF</a>
+            <a href="softengantt.html">SoftenGANTT</a>
+            <a href="softengrid.html">SoftenGRID</a>
+            <a href="softenreport.html">SoftenREPORT</a>
+            <a href="softenflow.html">SoftenFLOW</a>
+          </div>
+        </div>
         <a href="index.html#business">사업영역</a>
         <a href="index.html#history">사업이력</a>
         <a class="cta" href="index.html#contact">Contact</a>

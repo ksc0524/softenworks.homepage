@@ -15,7 +15,19 @@
       </a>
       <nav id="main-menu" class="menu" aria-label="Main navigation">
         <a href="#about">회사소개</a>
-        <a href="#products">제품소개</a>
+        <div class="menu-item has-submenu">
+          <a class="menu-parent" href="#products" aria-haspopup="true">
+            제품소개
+            <span class="menu-chevron" aria-hidden="true"></span>
+          </a>
+          <div class="submenu" role="group" aria-label="제품소개 하위 메뉴">
+            <a href="softenpdf.html">SoftenPDF</a>
+            <a href="softengantt.html">SoftenGANTT</a>
+            <a href="softengrid.html">SoftenGRID</a>
+            <a href="softenreport.html">SoftenREPORT</a>
+            <a href="softenflow.html">SoftenFLOW</a>
+          </div>
+        </div>
         <a href="#business">사업영역</a>
         <a href="#history">사업이력</a>
         <a class="cta" href="#contact">Contact</a>
