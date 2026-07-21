@@ -122,56 +122,129 @@
         <div class="feature-list">
           <article class="feature-row">
             <div class="feature-copy">
-              <div class="feature-heading"><span class="feature-index">01</span><p class="feature-tag">COMPARE ENGINE</p></div>
-              <h3>PDF 문서·도면 비교</h3>
-              <p>두 PDF의 페이지를 대응시키고 텍스트, 이미지와 시각 요소의 차이를 분석합니다. 일반 문서뿐 아니라 복잡한 도면과 이미지 중심 PDF에도 적용할 수 있습니다.</p>
-              <ul><li>페이지 단위 자동 비교</li><li>추가·삭제·변경 영역 식별</li><li>문서·도면·이미지 비교</li></ul>
+              <div class="feature-heading"><span class="feature-index">01</span><p class="feature-tag">IMAGE COMPARISON</p></div>
+              <h3>PDF 도면·이미지 비교</h3>
+              <ul class="feature-description">
+                <li>두 PDF도면/이미지를 겹쳐서 차이를 비교. 각종 편의 기능으로 두 도면 간 변화 추이 확인</li>
+                <li>두 도면 간 다른 부분(Diff)의 전체 개수 제공 및 diff 간 이동 기능 제공</li>
+                <li>언어전환, URL공유, 전체 맵, 이미지 타일화, 비교 정보 등 툴 버튼 제공</li>
+                <li>정확히 다른 부분 Diff 및 영역화 Diff 표시/숨기기/투명도 조절 기능 제공(도면 이미지 내 해당 위치에 표시)</li>
+                <li>도면 이동/확대/축소/오토줌 및 이미지맵 제공</li>
+                <li>Diff 썸네일 리스트 Summary 제공 및 해당 부분으로 이동</li>
+              </ul>
             </div>
-            <div class="feature-graphic compare-graphic" aria-hidden="true">
-              <div class="small-page left-page"><span></span><span></span><span></span></div>
-              <div class="scan-line"></div>
-              <div class="small-page right-page"><span></span><span></span><span></span><i></i></div>
+            <div class="feature-graphic feature-image-frame">
+              <button class="feature-image-button" type="button" data-feature-lightbox data-title="PDF 문서·도면 비교" aria-haspopup="dialog" aria-label="이미지 크게 보기">
+                <img src="img/softenpdf-compareimage-1-1.png" alt="SoftenPDF에서 두 도면의 차이를 비교한 화면" loading="lazy" decoding="async">
+                <span class="feature-image-label" aria-hidden="true">도면/이미지 비교</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+              </button>
             </div>
           </article>
 
           <article class="feature-row reverse">
             <div class="feature-copy">
-              <div class="feature-heading"><span class="feature-index">02</span><p class="feature-tag">SMART VIEWER</p></div>
-              <h3>차이 영역 탐색과 시각화</h3>
-              <p>비교 결과를 한눈에 파악하고 변경 영역으로 즉시 이동할 수 있습니다. 확대·축소와 페이지 이동을 이용해 세부 차이를 효율적으로 검토합니다.</p>
-              <ul><li>Before / After 동시 보기</li><li>중첩·차이 강조 보기</li><li>차이점 순차 탐색</li></ul>
+              <div class="feature-heading"><span class="feature-index">02</span><p class="feature-tag">OPTIONS FOR IMAGE COMPARISON</p></div>
+              <h3>다양한 도면, 다양한 비교 옵션</h3>
+              <ul class="feature-description">
+                <li>비교 시 미세한 차이 또는 개체 간 간섭 등에 의한 노이즈를 최소화 할 수 있는 각종 옵션 제공</li>
+                <li>Diff 표시 방식을 변경할 수 있는 각종 옵션 제공</li>
+                <li>회전, 사이즈, 도면이동 자동 조정 옵션</li>
+                <li>워터마크 제외 옵션</li>
+                <li>재단 영역 자동/수동 조정 옵션</li>
+              </ul>
             </div>
-            <div class="feature-graphic viewer-graphic" aria-hidden="true">
-              <div class="viewer-top"><i></i><i></i><i></i></div>
-              <div class="viewer-side"><span></span><span></span><span class="active"></span><span></span></div>
-              <div class="viewer-main"><i></i><b></b><em></em></div>
+            <div class="feature-graphic feature-image-frame">
+              <button class="feature-image-button feature-image-focus-right" type="button" data-feature-lightbox data-title="다양한 이미지 비교 옵션" aria-haspopup="dialog" aria-label="이미지 크게 보기">
+                <img src="img/softenpdf-compareimage-2-1.png" alt="다양한 이미지 비교 옵션" loading="lazy" decoding="async">
+                <span class="feature-image-label" aria-hidden="true">이미지 비교 옵션</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+              </button>
             </div>
           </article>
 
           <article class="feature-row">
             <div class="feature-copy">
-              <div class="feature-heading"><span class="feature-index">03</span><p class="feature-tag">SUMMARY &amp; REPORT</p></div>
-              <h3>비교 결과 요약과 활용</h3>
-              <p>페이지별 차이 개수와 검토 상태를 요약하고, 변경 영역 이미지와 결과 정보를 후속 검증 업무와 이력 관리에 활용할 수 있습니다.</p>
-              <ul><li>페이지별 결과 Summary</li><li>변경 영역 이미지 제공</li><li>검토 결과 공유·이력 활용</li></ul>
+              <div class="feature-heading"><span class="feature-index">03</span><p class="feature-tag">TEXT COMPARISON</p></div>
+              <h3>요구사항, 스펙 등 문서 간 텍스트 비교</h3>
+              <ul class="feature-description">
+                <li>오른쪽 문서 대비 삭제된 부분 표시</li>
+                <li>왼쪽 문서 대비 추가된 부분 표시</li>
+                <li>두 문서 간 다른 부분(Diff)을 북마크 형식으로 제공하여 클릭 시 해당 위치로 스크롤</li>
+                <li>언어 전환, 스크롤 동기화 등 기능 버튼 제공</li>
+                <li>상호 다른 부분 Diff Summary 제공. 클릭 시 이동</li>
+              </ul>
             </div>
-            <div class="feature-graphic report-graphic" aria-hidden="true">
-              <div class="chart-ring"><strong>87%</strong></div>
-              <div class="chart-summary"><span>Comparison Summary</span><strong>24 Differences</strong><i></i><i></i><i></i></div>
+            <div class="feature-graphic feature-image-frame">
+              <button class="feature-image-button feature-image-focus-left" type="button" data-feature-lightbox data-title="문서 텍스트 비교 결과 및 요약" aria-haspopup="dialog" aria-label="이미지 크게 보기">
+                <img src="img/softenpdf-comparetext-1.png" alt="요구사항, 스펙 등 문서 간 텍스트 비교" loading="lazy" decoding="async">
+                <span class="feature-image-label" aria-hidden="true">문서/텍스트 비교</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+              </button>
             </div>
           </article>
 
           <article class="feature-row reverse">
             <div class="feature-copy">
-              <div class="feature-heading"><span class="feature-index">04</span><p class="feature-tag">ENTERPRISE INTEGRATION</p></div>
-              <h3>업무 시스템 연계와 자동화</h3>
-              <p>독립형 웹 솔루션으로 사용하거나 기업의 문서 관리·설계·검증 프로세스에 연결해 업로드, 비교 실행과 결과 저장을 자동화할 수 있습니다.</p>
-              <ul><li>웹 기반 중앙 서비스</li><li>업무 프로세스 연계</li><li>다수 사용자·작업 관리</li></ul>
+              <div class="feature-heading"><span class="feature-index">04</span><p class="feature-tag">OPTIONS FOR TEXT COMPARISON</p></div>
+              <h3>다양한 텍스트 특성, 다양한 비교 옵션</h3>
+              <ul class="feature-description">
+                <li>텍스트 비교 알고리즘 옵션</li>
+                <li>공백 종류 관련 비교 옵션</li>
+                <li>재단 영역 자동/수동 조정 옵션</li>
+                <li>재단 외 영역 비교 제외 옵션</li>
+              </ul>
             </div>
-            <div class="feature-graphic integration-graphic" aria-hidden="true">
-              <div class="connector c1"></div><div class="connector c2"></div><div class="connector c3"></div><div class="connector c4"></div>
-              <div class="hub">PDF</div>
-              <span class="node n1">PLM</span><span class="node n2">DMS</span><span class="node n3">API</span><span class="node n4">WORKFLOW</span>
+            <div class="feature-graphic feature-image-frame">
+              <button class="feature-image-button feature-image-focus-bottom" type="button" data-feature-lightbox data-title="다양한 텍스트 비교 옵션" aria-haspopup="dialog" aria-label="이미지 크게 보기">
+                <img src="img/softenpdf-comparetext-2.png" alt="다양한 텍스트 비교 옵션" loading="lazy" decoding="async">
+                <span class="feature-image-label" aria-hidden="true">텍스트 비교 옵션</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="feature-row">
+            <div class="feature-copy">
+              <div class="feature-heading"><span class="feature-index">05</span><p class="feature-tag">FOLDER COMPARISON</p></div>
+              <h3>서버 폴더 간 비교</h3>
+              <ul class="feature-description">
+                <li>서버의 두 폴더 내 파일 간 매칭 및 비동기식 자동 비교</li>
+                <li>서버의 폴더 및 파일 관리 기능 제공</li>
+                <li>폴더 비교 진행 현황 제공</li>
+                <li>폴더 비교 결과 이력 관리</li>
+                <li>폴더 간 파일 비교 결과 Summary 제공</li>
+              </ul>
+            </div>
+            <div class="feature-graphic feature-image-frame">
+              <button class="feature-image-button feature-image-focus-left" type="button" data-feature-lightbox data-title="폴더 비교" aria-haspopup="dialog" aria-label="이미지 크게 보기">
+                <img src="img/softenpdf-comparefolder-1.png" alt="폴더 비교" loading="lazy" decoding="async">
+                <span class="feature-image-label" aria-hidden="true">폴더 간 비교</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="feature-row reverse">
+            <div class="feature-copy">
+              <div class="feature-heading"><span class="feature-index">06</span><p class="feature-tag">EXTENDABLE</p></div>
+              <h3>확장성, 다양성, 유연성</h3>
+              <ul class="feature-description">
+                <li>어플리케이션 기반의 다양한 설정 제공</li>
+                <li>비교 영역 분리 및 접근 권한 설정 제공</li>
+                <li>비교 영역 별로 분리된 다양한 설정 제공</li>
+                <li>국제화/로컬화 언어 확장성 지원</li>
+                <li>시스템 확장을 위한 플러그인 개발 환경 지원</li>
+                <li>RESTful API 제공</li>
+                <li>SSO(Single Sign On) 지원</li>
+              </ul>
+            </div>
+            <div class="feature-graphic feature-image-frame">
+              <button class="feature-image-button feature-image-focus-left" type="button" data-feature-lightbox data-title="확장성, 다양성, 유연성" aria-haspopup="dialog" aria-label="이미지 크게 보기">
+                <img src="img/softenpdf-extension.png" alt="확장성, 다양성, 유연성" loading="lazy" decoding="async">
+                <span class="feature-image-label" aria-hidden="true">확장성, 다양성, 유연성</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+              </button>
             </div>
           </article>
         </div>
@@ -298,6 +371,17 @@
     </section>
   </main>
 
+  <dialog id="feature-lightbox" class="feature-lightbox" aria-labelledby="feature-lightbox-title">
+    <button class="feature-lightbox-close" type="button" aria-label="확대 이미지 닫기"><span aria-hidden="true"></span></button>
+    <figure>
+      <div class="feature-lightbox-stage"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""></div>
+      <figcaption>
+        <span>SOFTENPDF FEATURE</span>
+        <strong id="feature-lightbox-title"></strong>
+      </figcaption>
+    </figure>
+  </dialog>
+
   <footer>
     <div class="container"><div>© 2026 SoftenWORKS. All rights reserved.</div><div><a href="index.html">SoftenWORKS</a> · SoftenPDF</div></div>
   </footer>
@@ -326,6 +410,63 @@
       document.addEventListener('click', event => { if (!header.contains(event.target)) closeMenu(); });
       document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(true); });
       window.addEventListener('resize', () => { if (window.innerWidth > 920) closeMenu(); });
+    })();
+
+    (() => {
+      const dialog = document.querySelector('#feature-lightbox');
+      const triggers = Array.from(document.querySelectorAll('[data-feature-lightbox]'));
+      const dialogImage = dialog?.querySelector('.feature-lightbox-stage img');
+      const dialogTitle = dialog?.querySelector('#feature-lightbox-title');
+      const closeButton = dialog?.querySelector('.feature-lightbox-close');
+      if (!dialog || !dialogImage || !dialogTitle || !closeButton || !triggers.length) return;
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let activeTrigger = null;
+      let closeTimer = null;
+
+      const closeLightbox = () => {
+        if (!dialog.open || dialog.classList.contains('is-closing')) return;
+
+        dialog.classList.remove('is-visible');
+        dialog.classList.add('is-closing');
+        document.body.classList.remove('feature-lightbox-open');
+
+        closeTimer = window.setTimeout(() => {
+          dialog.close();
+          dialog.classList.remove('is-closing');
+          dialogImage.removeAttribute('src');
+          activeTrigger?.focus();
+          activeTrigger = null;
+        }, reducedMotion.matches ? 0 : 220);
+      };
+
+      const openLightbox = trigger => {
+        const thumbnail = trigger.querySelector('img');
+        if (!thumbnail) return;
+
+        window.clearTimeout(closeTimer);
+        activeTrigger = trigger;
+        dialogImage.src = trigger.dataset.fullSrc || thumbnail.currentSrc || thumbnail.src;
+        dialogImage.alt = thumbnail.alt;
+        dialogTitle.textContent = trigger.dataset.title || thumbnail.alt;
+        document.body.classList.add('feature-lightbox-open');
+        dialog.showModal();
+        window.requestAnimationFrame(() => dialog.classList.add('is-visible'));
+        closeButton.focus();
+      };
+
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => openLightbox(trigger));
+      });
+
+      closeButton.addEventListener('click', closeLightbox);
+      dialog.addEventListener('click', event => {
+        if (event.target === dialog) closeLightbox();
+      });
+      dialog.addEventListener('cancel', event => {
+        event.preventDefault();
+        closeLightbox();
+      });
     })();
 
     (() => {
