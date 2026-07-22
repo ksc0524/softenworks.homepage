@@ -997,6 +997,29 @@ body.feature-lightbox-open {
 	transform: rotate(90deg);
 }
 
+.feature-row.white {
+	border: 1px solid var(--line);
+	background: #fff;
+	box-shadow: 0 14px 42px rgba(7, 21, 38, .04);
+}
+
+.feature-row.white .feature-description li {
+  color: var(--text)
+}
+
+.feature-row.white .feature-image-frame {
+	border: 3px solid #fafafa;
+	background: white;
+}
+
+.feature-row.white .feature-image-button {
+	background: white;
+}
+
+.feature-row.white .feature-image-button::after {
+	background: linear-gradient(180deg, rgba(5, 14, 26, .02) 38%, rgb(190 200 212 / 72%) 100%), linear-gradient(110deg, rgba(47, 128, 237, .08), transparent 48%);
+}
+
 @media (max-width: 720px) {
 	.feature-image-frame {
 		aspect-ratio: 4 / 3;
