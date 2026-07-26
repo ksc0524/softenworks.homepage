@@ -1710,6 +1710,11 @@ body.feature-lightbox-open {
 	background: #fff;
 }
 
+.logo-grid div > img {
+	max-width: 100%;
+	max-height: 3em;
+}
+
 .logo-grid span {
 	color: #9aa7b9;
 	font-size: 20px;
@@ -1718,8 +1723,8 @@ body.feature-lightbox-open {
 }
 
 .logo-grid strong {
-	color: var(--navy);
-	font-size: 13px;
+	color: #666;
+	font-size: 18px;
 	text-align: center;
 }
 
@@ -1825,12 +1830,12 @@ body.feature-lightbox-open {
 	.capability-strip > div:nth-child(-n+2) {
 		border-bottom: 1px solid var(--line);
 	}
-
+/*
 	.feature-row,
 	.feature-row.reverse {
 		grid-template-columns: minmax(0, 1fr) minmax(300px, .9fr);
 	}
-
+*/
 	.workflow-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
