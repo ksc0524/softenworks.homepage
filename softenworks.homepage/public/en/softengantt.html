@@ -1,53 +1,72 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SoftenGANTT 는 지멘스 Polarion의 Work Item 을 Gantt 구조로 표현하고 편집하는 위젯입니다.">
+  <meta name="description" content="SoftenGANTT is a configurable Gantt editor and viewer for planning and managing Siemens Polarion ALM Work Items, WBS structures, dependencies, and resources.">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#071526">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SoftenWORKS">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
   <meta property="og:title" content="SoftenGANTT | Polarion Gantt Widget">
-  <meta property="og:description" content="SoftenGANTT 는 지멘스 Polarion의 Work Item 을 Gantt 구조로 표현하고 편집하는 위젯입니다.">
-  
+  <meta property="og:description" content="Plan, edit, and visualize Polarion Work Items in a configurable Gantt experience built for real-world project delivery.">
+  <meta property="og:url" content="https://www.softenworks.com/en/softengantt">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SoftenGANTT | Polarion Gantt Widget">
+  <meta name="twitter:description" content="Plan, edit, and visualize Polarion Work Items in a configurable Gantt experience built for real-world project delivery.">
+  <link rel="canonical" href="https://www.softenworks.com/en/softengantt">
+  <link rel="alternate" hreflang="ko" href="https://www.softenworks.com/softengantt">
+  <link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/softengantt">
+  <link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/softengantt">
+
   <title>Polarion Gantt Widget - SoftenGANTT</title>
-  
+
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
+
   <link href="/css/softenworks.css" rel="stylesheet">
   <link href="/css/product.css" rel="stylesheet">
-  
+
   <script src="/js/release-notes.js" defer></script>
 </head>
 <body class="product-detail-page">
-  <a class="skip-link" href="#content">본문으로 바로가기</a>
+  <a class="skip-link" href="#content">Skip to main content</a>
 
   <header>
     <div class="container nav">
-      <a href="index.html" class="brand" aria-label="SoftenWORKS 홈" title="SoftenWORKS 홈">
+      <a href="index.html" class="brand" aria-label="SoftenWORKS home" title="SoftenWORKS home">
         <img width="240" height="48" src="/img/softenworks-logo.svg" alt="SoftenWORKS">
       </a>
-      <nav id="main-menu" class="menu" aria-label="SoftenGANTT 주요 메뉴">
-        <a href="index.html#about">회사소개</a>
+      <nav id="main-menu" class="menu" aria-label="SoftenGANTT main navigation">
+        <a href="index.html#about">Company</a>
         <div class="menu-item has-submenu">
           <a class="menu-parent active" href="index.html#products" aria-haspopup="true">
-            제품소개
+            Products
             <span class="menu-chevron" aria-hidden="true"></span>
           </a>
-          <div class="submenu" role="group" aria-label="제품소개 하위 메뉴">
-            <a href="softenpdf.html" aria-current="page">SoftenPDF</a>
-            <a class="current" href="softengantt.html">SoftenGANTT</a>
+          <div class="submenu" role="group" aria-label="Product pages">
+            <a href="softenpdf.html">SoftenPDF</a>
+            <a class="current" href="softengantt.html" aria-current="page">SoftenGANTT</a>
             <a href="index.html#SoftenGRID">SoftenGRID</a>
             <a href="index.html#SoftenREPORT">SoftenREPORT</a>
             <a href="index.html#SoftenFLOW">SoftenFLOW</a>
           </div>
         </div>
-        <a href="index.html#business">사업영역</a>
-        <a href="index.html#history">사업이력</a>
+        <a href="index.html#business">Expertise</a>
+        <a href="index.html#history">Track Record</a>
+        <a class="language-link" href="/softengantt.html" lang="ko" hreflang="ko" aria-label="View this page in Korean">
+          <svg class="language-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+          </svg>
+          <span class="language-code">KO</span>
+        </a>
         <a class="cta" href="index.html#contact">Contact</a>
       </nav>
-      <button class="hamburger" type="button" aria-label="메뉴 열기" aria-controls="main-menu" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Open menu" aria-controls="main-menu" aria-expanded="false">
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </div>
@@ -63,7 +82,7 @@
       </div>
     </section>
 
-    <nav class="section-nav" aria-label="페이지 바로가기">
+    <nav class="section-nav" aria-label="On this page">
       <div class="container">
         <a href="#overview">Overview</a>
         <a href="#features">Features</a>
@@ -78,7 +97,7 @@
         <p class="section-kicker">OVERVIEW</p>
         <div class="overview-intro">
           <div>
-            <h2 id="overview-title">SIEMENS Polarion ALM의 프로젝트를 편리한 K-Gantt 로 관리하세요.</h2>
+            <h2 id="overview-title">Manage Polarion Projects with a Gantt Experience Built for Real-World Work</h2>
           </div><!--
           <div class="overview-copy">
             <iframe style="width: 100%; height: 100%; min-width: 280px; min-height: 157px; border: 0; border-radius: 6px;"
@@ -87,32 +106,32 @@
         </div>
 
         <div class="capability-strip">
-          <div><span>01</span><strong>직관적인 일정관리</strong><p>드래그 앤 드롭으로 작업 일정을 손쉽게 조정하고, 프로젝트의 전체 흐름을 한눈에 파악할 수 있습니다.</p></div>
-          <div><span>02</span><strong>편리한 간트 편집 도구</strong><p>작업 추가·삭제·복사부터 확대·축소, 실행 취소까지 다양한 도구로 일정 편집을 빠르게 수행합니다.</p></div>
-          <div><span>03</span><strong>WBS 및 의존관계 관리</strong><p>계층적인 WBS와 작업 간 선후행 관계를 시각화하여 복잡한 프로젝트 구조와 일정 영향을 명확하게 관리합니다.</p></div>
-          <div><span>04</span><strong>정확한 진척도 관리</strong><p>계획·실적·잔여 작업을 기준으로 진척도를 확인하고, 일정 지연과 주요 변경 사항을 빠르게 파악합니다.</p></div>
+          <div><span>01</span><strong>INTUITIVE SCHEDULING</strong><p>Adjust task dates by drag and drop and understand the complete project flow at a glance.</p></div>
+          <div><span>02</span><strong>PRACTICAL EDITING TOOLS</strong><p>Add, delete, and copy tasks, zoom across the timeline, and undo changes with ease.</p></div>
+          <div><span>03</span><strong>WBS &amp; DEPENDENCIES</strong><p>Visualize hierarchical WBS structures and task dependencies to understand schedule impact clearly.</p></div>
+          <div><span>04</span><strong>PROGRESS TRACKING</strong><p>Track planned, completed, and remaining work to spot delays and important changes early.</p></div>
         </div>
 
         <div class="value-grid">
           <article class="value-card featured">
             <span class="value-no">01</span>
-            <h3>체계적인 자원 현황 파악</h3>
-            <p>담당자별 작업 일정과 투입 현황을 확인하여 업무 집중과 자원 충돌을 줄이고 효율적인 배분을 지원합니다.</p>
+            <h3>Clear Resource Visibility</h3>
+            <p>Review schedules and assigned effort by assignee to reduce workload concentration, avoid resource conflicts, and improve allocation.</p>
           </article>
           <article class="value-card">
             <span class="value-no">02</span>
-            <h3>유연한 플러그인 옵션</h3>
-            <p>프로젝트 특성과 업무 방식에 맞게 화면 구성, 표시 항목, 필터와 주요 동작을 다양하게 설정할 수 있습니다.</p>
+            <h3>Flexible Configuration</h3>
+            <p>Configure layout, displayed fields, filters, and key behaviors to match each project and team’s way of working.</p>
           </article>
           <article class="value-card">
             <span class="value-no">03</span>
-            <h3>Polarion 완벽 연계</h3>
-            <p>Polarion의 Work Item, Plan 및 프로젝트 데이터를 기반으로 별도의 데이터 이관 없이 일정을 관리합니다.</p>
+            <h3>Seamless Polarion Integration</h3>
+            <p>Manage schedules directly from Polarion Work Items, Plans, and project data—without separate data migration.</p>
           </article>
           <article class="value-card">
             <span class="value-no">04</span>
-            <h3>신속한 고객 요구 대응</h3>
-            <p>실제 업무에서 필요한 기능을 지속적으로 반영하고, 고객 환경에 최적화된 확장과 기술 지원을 제공합니다.</p>
+            <h3>Responsive Customer Support</h3>
+            <p>We continually incorporate real-world requirements and provide extensions and technical support tailored to each customer environment.</p>
           </article>
         </div>
       </div>
@@ -122,60 +141,60 @@
       <div class="container">
         <p class="section-kicker">FEATURES</p>
         <div class="section-head light-head">
-          <h2 id="features-title">주요 기능</h2>
-          <p>Polarion의 다양한 work item 과 복잡한 상관 관계를 간트 차트로 표현하고 편리하게 편집하세요.</p>
+          <h2 id="features-title">Core Features</h2>
+          <p>Visualize diverse Polarion Work Items and complex relationships in a Gantt chart, then edit schedules with ease.</p>
         </div>
 
         <div class="feature-list">
           <article class="feature-row">
             <div class="feature-copy">
               <div class="feature-heading"><span class="feature-index">01</span><p class="feature-tag">OVERVIEW</p></div>
-              <h3>Polarion ALM에 최적화 된 Gantt Chart Editor/Viewer</h3>
+              <h3>A Gantt Editor and Viewer Purpose-Built for Polarion ALM</h3>
               <ul class="feature-description">
-                <li>다양하고 복잡한 Work Item 상·하위 구조 지원</li>
-                <li>Drag & Drop 으로 일정 변경 및 스크롤 이동</li>
-                <li>FS / SS / SF / FF 선·후행 상관 관계 지원</li>
-                <li>Plan 과 연관된 WBS 조회 기능</li>
-                <li>다양한 툴 버튼 및 확장 기능 제공</li>
-                <li>Work Item 기반 진행률 계산</li>
-                <li>다양한 Widget Parameter 로 구성 변경</li>
-                <li>신속한 고객 요구사항 대응</li>
+                <li>Support diverse and deeply nested Work Item hierarchies.</li>
+                <li>Change dates and navigate the schedule with drag-and-drop interaction.</li>
+                <li>Model finish-to-start, start-to-start, finish-to-finish, and start-to-finish dependencies.</li>
+                <li>View WBS structures associated with Polarion Plans.</li>
+                <li>Use a broad set of editing tools and optional extensions.</li>
+                <li>Calculate progress from Work Item data.</li>
+                <li>Configure the experience through flexible Widget Parameters.</li>
+                <li>Extend capabilities quickly in response to customer requirements.</li>
               </ul>
             </div>
             <div class="feature-graphic feature-image-frame">
-              <button class="feature-image-button" type="button" data-feature-lightbox data-title="SoftenGANTT Overview" aria-haspopup="dialog" aria-label="이미지 크게 보기">
-                <img src="/img/softengantt-overview.png" alt="Work Item 간 상호 관계를 Gantt 로 조회하고 편집하는 화면" loading="lazy" decoding="async">
-                <span class="feature-image-label" aria-hidden="true">Gantt Editor 기본</span>
-                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+              <button class="feature-image-button" type="button" data-feature-lightbox data-title="SoftenGANTT Overview" aria-haspopup="dialog" aria-label="Enlarge image">
+                <img src="/img/softengantt-overview.png" alt="SoftenGANTT interface for viewing and editing relationships between Polarion Work Items" loading="lazy" decoding="async">
+                <span class="feature-image-label" aria-hidden="true">Gantt Editor</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>Enlarge</span>
               </button>
             </div>
           </article>
 
           <article class="feature-row reverse">
             <div class="feature-copy">
-              <div class="feature-heading"><span class="feature-index">02</span><p class="feature-tag">TOOLS & EXTENSIONS</p></div>
-              <h3>다양한 도구 기능 및 확장 도구</h3>
+              <div class="feature-heading"><span class="feature-index">02</span><p class="feature-tag">TOOLS &amp; EXTENSIONS</p></div>
+              <h3>Powerful Editing Tools and Extensions</h3>
               <ul class="feature-description">
-                <li>기본 편집 도구: Save, Redo, Undo, Reload</li>
-                <li>Scheduling 도구: Auto scheduling, Critical Path</li>
-                <li>Expand, Collapse, 전체 화면</li>
-                <li>Scale 조절 기능: 확대, 축소, 전체 일정 보기</li>
-                <li>Today Flag</li>
-                <li>확장 도구:
+                <li>Core editing: Save, Undo, Redo, and Reload</li>
+                <li>Scheduling: Auto Scheduling and Critical Path</li>
+                <li>Expand, Collapse, and full-screen views</li>
+                <li>Timeline scale controls: zoom in, zoom out, and fit the entire schedule</li>
+                <li>Today marker</li>
+                <li>Optional extensions:
                   <ul class="feature-description">
                     <li>Resource View</li>
-                    <li>Baseline Flag</li>
-                    <li>베이스라인 시점의 일정 조회</li>
-                    <li>베이스라인 시점과 일정 비교</li>
+                    <li>Baseline marker</li>
+                    <li>View the schedule as of a selected baseline</li>
+                    <li>Compare the current schedule with its baseline</li>
                   </ul>
                 </li>
               </ul>
             </div>
             <div class="feature-graphic feature-image-frame">
-              <button class="feature-image-button feature-image-focus-right" type="button" data-feature-lightbox data-title="다양한 도구 기능 및 확장 도구" aria-haspopup="dialog" aria-label="이미지 크게 보기">
-                <img src="/img/softengantt-tools.png" alt="다양한 도구 기능 및 확장 도구" loading="lazy" decoding="async">
+              <button class="feature-image-button feature-image-focus-right" type="button" data-feature-lightbox data-title="Editing Tools and Extensions" aria-haspopup="dialog" aria-label="Enlarge image">
+                <img src="/img/softengantt-tools.png" alt="SoftenGANTT editing tools and optional extensions" loading="lazy" decoding="async">
                 <span class="feature-image-label" aria-hidden="true">Tools</span>
-                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>Enlarge</span>
               </button>
             </div>
           </article>
@@ -183,27 +202,27 @@
           <article class="feature-row">
             <div class="feature-copy">
               <div class="feature-heading"><span class="feature-index">03</span><p class="feature-tag">WIDGET PARAMETERS</p></div>
-              <h3>Gantt 차트를 다양하게 구성해 주는 Widget Parameters</h3>
+              <h3>Widget Parameters for Precise Configuration</h3>
               <ul class="feature-description">
-                <li>Gantt 차트를 다양한 스타일로 표현하기 위한 파라미터</li>
-                <li>Work Item 구조를 구성하기 위한 Dataset 파라미터</li>
-                <li>Task 데이터와 Work Item 필드를 매핑하는 파라미터</li>
-                <li>진행률 계산 방식 선택 파라미터</li>
-                <li>Task의 종류가 지정되는 방식을 선택하는 파라미터</li>
-                <li>Polarion Calendar 적용</li>
-                <li>FS/SS/FF/SF 를 Link Role 과 매핑하는 파라미터</li>
-                <li>Read Only Gantt 및 Grid 내 인라인 편집 옵션</li>
-                <li>Grid 에 Work Item 필드를 추가하는 파라미터</li>
-                <li>Resource View 및 Time Spent 소스 지정 파라미터</li>
-                <li>확장 Tool 추가 파라미터</li>
-                <li>커스텀 Script 및 Styles</li>
+                <li>Style the Gantt chart for different reporting and planning contexts.</li>
+                <li>Shape Work Item hierarchies with dataset parameters.</li>
+                <li>Map task data to Polarion Work Item fields.</li>
+                <li>Select the progress calculation method.</li>
+                <li>Control how task types are determined.</li>
+                <li>Apply Polarion project calendars.</li>
+                <li>Map FS, SS, FF, and SF dependencies to Polarion Link Roles.</li>
+                <li>Enable read-only Gantt mode or inline editing in the grid.</li>
+                <li>Add selected Work Item fields to the grid.</li>
+                <li>Configure Resource View and the Time Spent source.</li>
+                <li>Add optional extension tools.</li>
+                <li>Apply custom scripts and styles.</li>
               </ul>
             </div>
             <div class="feature-graphic feature-image-frame">
-              <button class="feature-image-button feature-image-focus-left" type="button" data-feature-lightbox data-title="다양한 위젯 파라미터" aria-haspopup="dialog" aria-label="이미지 크게 보기">
-                <img src="/img/softengantt-parameters.png" alt="다양한 위젯 파라미터" loading="lazy" decoding="async">
+              <button class="feature-image-button feature-image-focus-left" type="button" data-feature-lightbox data-title="Configurable Widget Parameters" aria-haspopup="dialog" aria-label="Enlarge image">
+                <img src="/img/softengantt-parameters.png" alt="SoftenGANTT Widget Parameters configuration" loading="lazy" decoding="async">
                 <span class="feature-image-label" aria-hidden="true">Widget Parameters</span>
-                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>Enlarge</span>
               </button>
             </div>
           </article>
@@ -211,29 +230,29 @@
           <article class="feature-row reverse">
             <div class="feature-copy">
               <div class="feature-heading"><span class="feature-index">04</span><p class="feature-tag">RESOURCE VIEW</p></div>
-              <h3>Work Item 에 지정된 담당자 별로 할당된 공수를 다양한 방식으로 표현</h3>
+              <h3>Visualize Assigned Effort by Work Item Assignee</h3>
               <ul class="feature-description">
-                <li>Widget Parameter 로 Resource View 확장 도구 추가</li>
-                <li>담당자 별 전체 할당된 공수 파악</li>
-                <li>일/주/월간 할당된 공수 파악</li>
-                <li>선택한 담당자가 할당된 Task 만 필터링하는 기능</li>
-                <li>8시간 기준 초과 할당된 경우 스타일 구분 표시</li>
-                <li>다양한 할당량 계산 방식 지원:
+                <li>Add the Resource View extension through Widget Parameters.</li>
+                <li>Review total assigned effort for each assignee.</li>
+                <li>Analyze assigned effort by day, week, or month.</li>
+                <li>Filter the Gantt chart to tasks assigned to selected people.</li>
+                <li>Highlight daily allocations that exceed an eight-hour threshold.</li>
+                <li>Choose from multiple allocation methods:
                   <ul class="feature-description">
-                    <li>정확한 일자 또는 균등 분할 옵션</li>
-                    <li>Initial Estimate: 계획 공수 기반으로 계산</li>
-                    <li>Remaining Estimate + Time Spent: 현 시점 총 공수 기반으로 계산</li>
-                    <li>Time Spent: 사용한 시간(Time Spent 만으로 계산</li>
-                    <li>Task Count: 할당된 Task 개수</li>
+                    <li>Allocate effort to exact dates or distribute it evenly</li>
+                    <li>Initial Estimate: calculate from planned effort</li>
+                    <li>Remaining Estimate + Time Spent: calculate total current effort</li>
+                    <li>Time Spent: calculate from recorded time only</li>
+                    <li>Task Count: count assigned tasks</li>
                   </ul>
                 </li>
               </ul>
             </div>
             <div class="feature-graphic feature-image-frame">
-              <button class="feature-image-button feature-image-focus-bottom" type="button" data-feature-lightbox data-title="자원 현황 및 공수 집계" aria-haspopup="dialog" aria-label="이미지 크게 보기">
-                <img src="/img/softengantt-resource.png" alt="자원 현황 및 공수 집계" loading="lazy" decoding="async">
+              <button class="feature-image-button feature-image-focus-bottom" type="button" data-feature-lightbox data-title="Resource Capacity and Effort" aria-haspopup="dialog" aria-label="Enlarge image">
+                <img src="/img/softengantt-resource.png" alt="SoftenGANTT Resource View showing capacity and assigned effort" loading="lazy" decoding="async">
                 <span class="feature-image-label" aria-hidden="true">Resource View</span>
-                <span class="feature-image-action" aria-hidden="true"><i></i>크게 보기</span>
+                <span class="feature-image-action" aria-hidden="true"><i></i>Enlarge</span>
               </button>
             </div>
           </article>
@@ -244,15 +263,15 @@
     <section id="cases" class="history">
       <div class="container">
         <div class="section-head">
-          <h2>적용 사례</h2>
-          <p>SoftenGANTT 제품이 적용된 사례입니다.</p>
+          <h2>Customer Success Stories</h2>
+          <p>Selected projects where SoftenGANTT has supported planning and delivery in Polarion ALM.</p>
         </div>
         <div class="timeline">
-          <div class="history-row"><strong>2025</strong><p class="highlight">SoftenGANTT</p><p>경신</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
-          <div class="history-row"><strong>2025</strong><p class="highlight">SoftenGANTT</p><p>명화공업</p><p>SoftenGANTT 로 Gantt 위젯 교체 및 WBS 마이그레이션</p></div>
-          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenGANTT</p><p>디와이씨스</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
-          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenGANTT</p><p>삼성전자</p><p>제품들을 기반으로 기술 로드맵 관리 시스템 구축</p></div>
-          <div class="history-row"><strong>2023</strong><p class="highlight">SoftenGANTT</p><p>일흥</p><p>제품을 적용하여 Polarion ALM 솔루션 기반 A-SPICE 프로세스 구축</p></div>
+          <div class="history-row"><strong>2025</strong><p class="highlight">SoftenGANTT</p><p>Kyungshin</p><p>Implemented an Automotive SPICE process on Polarion ALM using SoftenGANTT</p></div>
+          <div class="history-row"><strong>2025</strong><p class="highlight">SoftenGANTT</p><p>Myunghwa Industrial</p><p>Replaced the existing Gantt widget with SoftenGANTT and migrated WBS data</p></div>
+          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenGANTT</p><p>DYESSYS</p><p>Implemented an Automotive SPICE process on Polarion ALM using SoftenGANTT</p></div>
+          <div class="history-row"><strong>2024</strong><p class="highlight">SoftenGANTT</p><p>Samsung Electronics</p><p>Built a technology roadmap management system using SoftenGANTT</p></div>
+          <div class="history-row"><strong>2023</strong><p class="highlight">SoftenGANTT</p><p>ILHEUNG</p><p>Implemented an Automotive SPICE process on Polarion ALM using SoftenGANTT</p></div>
         </div>
       </div>
     </section>
@@ -261,16 +280,16 @@
       <div class="container">
         <p class="section-kicker">CUSTOMERS</p>
         <div class="section-head">
-          <h2 id="customers-title">고객 및 협력사</h2>
-          <p>대기업 및 중견기업에서 사용 중인 검증된 제품입니다. 고객의 요구사항에 신속하게 대응할 것을 약속드립니다.</p>
+          <h2 id="customers-title">Customers &amp; Partners</h2>
+          <p>Trusted by large enterprises and leading midsized manufacturers, SoftenGANTT is backed by responsive support and a commitment to long-term customer success.</p>
         </div>
 
         <div class="logo-grid">
-          <div><img src="/img/customer-kyungshin.png"><strong>경신</strong></div>
-          <div><img src="/img/customer-myunghwa.png"><strong>명화공업</strong></div>
-          <div><img src="/img/customer-dyessys.png"><strong>디와이씨스</strong></div>
-          <div><img src="/img/customer-samsung.png"><strong>삼성전자</strong></div>
-          <div><img src="/img/customer-ilheung.png"><strong>일흥</strong></div>
+          <div><img src="/img/customer-kyungshin.png" alt="Kyungshin"><strong>Kyungshin</strong></div>
+          <div><img src="/img/customer-myunghwa.png" alt="Myunghwa Industrial"><strong>Myunghwa Industrial</strong></div>
+          <div><img src="/img/customer-dyessys.png" alt="DYESSYS"><strong>DYESSYS</strong></div>
+          <div><img src="/img/customer-samsung.png" alt="Samsung Electronics"><strong>Samsung Electronics</strong></div>
+          <div><img src="/img/customer-ilheung.png" alt="ILHEUNG"><strong>ILHEUNG</strong></div>
         </div>
       </div>
     </section>
@@ -280,7 +299,7 @@
         <p class="section-kicker">WHAT'S NEW</p>
         <div class="section-head light-head">
           <h2 id="whats-new-title">What's New</h2>
-          <p>현장의 검증 요구를 반영하여 비교 품질, 대용량 처리 안정성과 업무 편의성을 지속적으로 개선합니다.</p>
+          <p>We continuously improve planning flexibility, Polarion integration, resource visibility, and usability based on real-world customer feedback.</p>
         </div>
 
         <div class="release-toolbar">
@@ -288,12 +307,12 @@
             <span class="release-source-icon" aria-hidden="true">MD</span>
             <span>
               <strong>Release Notes</strong>
-              <small>Markdown 파일에서 최신 변경 사항을 불러옵니다.</small>
+              <small>Latest product updates loaded from the release notes.</small>
             </span>
           </div>
           <div class="release-toolbar-actions">
-            <span class="release-count" data-release-count>불러오는 중</span>
-            <a class="release-source-link" href="/release-notes/softengantt.md" target="_blank" rel="noopener">Markdown 원문 보기</a>
+            <span class="release-count" data-release-count>Loading…</span>
+            <a class="release-source-link" href="/release-notes/softengantt.md" target="_blank" rel="noopener">View Full Release Notes</a>
           </div>
         </div>
 
@@ -302,7 +321,7 @@
             <span></span><span></span><span></span>
           </div>
           <noscript>
-            <p class="release-error">릴리즈 노트를 확인하려면 JavaScript를 활성화하거나 <a href="/release-notes/softengantt.md">Markdown 원문</a>을 열어 주세요.</p>
+            <p class="release-error">Enable JavaScript to view the release notes, or <a href="/release-notes/softengantt.md">open the full Markdown file</a>.</p>
           </noscript>
         </div>
       </div>
@@ -313,18 +332,18 @@
         <div class="contact-box">
           <div>
             <div class="eyebrow">CONTACT SOFTENWORKS</div>
-            <h2 id="contact-title">SoftenGANTT 도입을<br>검토하고 계신가요?</h2>
-            <p>적용 대상 문서와 업무 환경을 알려주시면 데모와 시스템 연계·구축 방안을 함께 검토해 드립니다.</p>
+            <h2 id="contact-title">Planning to Add SoftenGANTT<br>to Polarion?</h2>
+            <p>Tell us about your Polarion environment, project structure, and planning requirements. We’ll help you evaluate a demo, configuration, integration, and rollout.</p>
             <div class="hero-actions">
-              <a class="btn primary" href="mailto:support@softenworks.com?subject=SoftenGANTT%20도입%20문의">도입 문의하기</a>
-              <a class="btn secondary" href="index.html">회사 홈페이지</a>
+              <a class="btn primary" href="mailto:support@softenworks.com?subject=SoftenGANTT%20Product%20Inquiry">Request a Consultation</a>
+              <a class="btn secondary" href="index.html">Company Website</a>
             </div>
           </div>
           <div class="contact-list">
             <div><strong>Product</strong>SoftenGANTT</div>
             <div><strong>Email</strong>support@softenworks.com<br>admin@softenworks.com</div>
-            <div><strong>Phone</strong>+82 031-000-0000<br>+82 010-3035-7048</div>
-            <div><strong>Consulting</strong>제품 도입 · 시스템 연계 · 구축 상담</div>
+            <div><strong>Phone</strong>+82 31-000-0000<br>+82 10-3035-7048</div>
+            <div><strong>Consulting</strong>Product evaluation · Configuration · Integration · Rollout</div>
             <div><strong>Business Hours</strong>Mon - Fri, 09:00 - 18:00</div>
           </div>
         </div>
@@ -333,7 +352,7 @@
   </main>
 
   <dialog id="feature-lightbox" class="feature-lightbox" aria-labelledby="feature-lightbox-title">
-    <button class="feature-lightbox-close" type="button" aria-label="확대 이미지 닫기"><span aria-hidden="true"></span></button>
+    <button class="feature-lightbox-close" type="button" aria-label="Close enlarged image"><span aria-hidden="true"></span></button>
     <figure>
       <div class="feature-lightbox-stage"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""></div>
       <figcaption>
@@ -357,7 +376,7 @@
       const closeMenu = (focusButton = false) => {
         menu.classList.remove('is-open');
         button.setAttribute('aria-expanded', 'false');
-        button.setAttribute('aria-label', '메뉴 열기');
+        button.setAttribute('aria-label', 'Open menu');
         if (focusButton) button.focus();
       };
 
@@ -365,7 +384,7 @@
         const willOpen = button.getAttribute('aria-expanded') !== 'true';
         menu.classList.toggle('is-open', willOpen);
         button.setAttribute('aria-expanded', String(willOpen));
-        button.setAttribute('aria-label', willOpen ? '메뉴 닫기' : '메뉴 열기');
+        button.setAttribute('aria-label', willOpen ? 'Close menu' : 'Open menu');
       });
       menu.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
       document.addEventListener('click', event => { if (!header.contains(event.target)) closeMenu(); });
