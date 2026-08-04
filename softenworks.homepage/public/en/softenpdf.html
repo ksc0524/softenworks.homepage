@@ -27,8 +27,8 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link href="/css/softenworks.css" rel="stylesheet">
-  <link href="/css/product.css" rel="stylesheet">
+  <link href="/css/softenworks.css?v=1.0" rel="stylesheet">
+  <link href="/css/product.css?v=1.0" rel="stylesheet">
 
   <script src="/js/release-notes.js" defer></script>
 </head>
@@ -67,7 +67,9 @@
         <a class="cta" href="index.html#contact">Contact</a>
       </nav>
       <button class="hamburger" type="button" aria-label="Open menu" aria-controls="main-menu" aria-expanded="false">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
     </div>
   </header>
@@ -404,16 +406,16 @@
           </div>
           <div class="release-toolbar-actions">
             <span class="release-count" data-release-count>Loading…</span>
-            <a class="release-source-link" href="/release-notes/softenpdf.md" target="_blank" rel="noopener">View Full Release Notes</a>
+            <a class="release-source-link" href="/release-notes/softenpdf_en.md" target="_blank" rel="noopener">View Full Release Notes</a>
           </div>
         </div>
 
-        <div id="release-notes" class="release-notes is-loading" data-markdown="/release-notes/softenpdf.md" aria-live="polite" aria-busy="true">
+        <div id="release-notes" class="release-notes is-loading" data-markdown="/release-notes/softenpdf_en.md" aria-live="polite" aria-busy="true">
           <div class="release-skeleton" aria-hidden="true">
             <span></span><span></span><span></span>
           </div>
           <noscript>
-            <p class="release-error">Enable JavaScript to view the release notes, or <a href="/release-notes/softenpdf.md">open the full Markdown file</a>.</p>
+            <p class="release-error">Enable JavaScript to view the release notes, or <a href="/release-notes/softenpdf_en.md">open the full Markdown file</a>.</p>
           </noscript>
         </div>
       </div>
@@ -455,7 +457,13 @@
   </dialog>
 
   <footer>
-    <div class="container"><div>© 2026 SoftenWORKS. All rights reserved.</div><div><a href="index.html">SoftenWORKS</a> · SoftenPDF</div></div>
+    <div class="container">
+      <div>© 2026 SoftenWORKS. All rights reserved.</div>
+      <div class="legal-footer-links">
+        <a href="software-license-terms.html" aria-current="page">Software License Standard Terms</a>
+        <span><a href="index.html">SoftenWORKS</a> · SoftenPDF</span>
+      </div>
+    </div>
   </footer>
 
   <script>

@@ -27,8 +27,8 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-  <link href="/css/softenworks.css" rel="stylesheet">
-  <link href="/css/product.css" rel="stylesheet">
+  <link href="/css/softenworks.css?v=1.0" rel="stylesheet">
+  <link href="/css/product.css?v=1.0" rel="stylesheet">
   
   <script src="/js/release-notes.js" defer></script>
 </head>
@@ -40,7 +40,7 @@
       <a href="index.html" class="brand" aria-label="SoftenWORKS 홈" title="SoftenWORKS 홈">
         <img width="240" height="48" src="/img/softenworks-logo.svg" alt="SoftenWORKS">
       </a>
-      <nav id="main-menu" class="menu" aria-label="SoftenPDF 주요 메뉴">
+      <nav id="main-menu" class="menu" aria-label="주요 메뉴">
         <a href="index.html#about">회사소개</a>
         <div class="menu-item has-submenu">
           <a class="menu-parent active" href="index.html#products" aria-haspopup="true">
@@ -67,7 +67,9 @@
         <a class="cta" href="index.html#contact">Contact</a>
       </nav>
       <button class="hamburger" type="button" aria-label="메뉴 열기" aria-controls="main-menu" aria-expanded="false">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
     </div>
   </header>
@@ -455,7 +457,13 @@
   </dialog>
 
   <footer>
-    <div class="container"><div>© 2026 SoftenWORKS. All rights reserved.</div><div><a href="index.html">SoftenWORKS</a> · SoftenPDF</div></div>
+    <div class="container">
+      <div>© 2026 SoftenWORKS. All rights reserved.</div>
+      <div class="legal-footer-links">
+        <a href="software-license-terms.html" aria-current="page">소프트웨어 라이선스 기본약관</a>
+        <span><a href="index.html">SoftenWORKS</a> · SoftenPDF</span>
+      </div>
+    </div>
   </footer>
 
   <script>
