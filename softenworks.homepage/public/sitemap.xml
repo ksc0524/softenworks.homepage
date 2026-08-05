@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.softenworks.com/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/" />
+  </url>
+  <url>
+    <loc>https://www.softenworks.com/en/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/" />
+  </url>
+  <url>
+    <loc>https://www.softenworks.com/softenpdf</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/softenpdf" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/softenpdf" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/softenpdf" />
+  </url>
+  <url>
+    <loc>https://www.softenworks.com/en/softenpdf</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/softenpdf" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/softenpdf" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/softenpdf" />
+  </url>
+  <url>
+    <loc>https://www.softenworks.com/softengantt</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/softengantt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/softengantt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/softengantt" />
+  </url>
+  <url>
+    <loc>https://www.softenworks.com/en/softengantt</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/softengantt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/softengantt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/softengantt" />
+  </url>
+  <url>
+    <loc>https://www.softenworks.com/software-license-terms</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/software-license-terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/software-license-terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/software-license-terms" />
+  </url>
+  <url>
+    <loc>https://www.softenworks.com/en/software-license-terms</loc>
+    <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.softenworks.com/software-license-terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.softenworks.com/en/software-license-terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.softenworks.com/software-license-terms" />
+  </url>
+</urlset>
