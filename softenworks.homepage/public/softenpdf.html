@@ -28,7 +28,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   <link href="/css/softenworks.css?v=1.0" rel="stylesheet">
-  <link href="/css/product.css?v=1.0" rel="stylesheet">
+  <link href="/css/product.css?v=1.1" rel="stylesheet">
   
   <script src="/js/release-notes.js" defer></script>
 </head>
@@ -90,6 +90,7 @@
         <a href="#features">Features</a>
         <a href="#cases">References</a>
         <a href="#customers">Customers</a>
+        <a href="#guides">Guides</a>
         <a href="#whats-new">What's New</a>
       </div>
     </nav>
@@ -388,6 +389,68 @@
       </div>
     </section>
 
+    <section id="guides" class="product-guides" aria-labelledby="guides-title">
+      <div class="container">
+        <p class="section-kicker">VIDEO GUIDES</p>
+        <div class="section-head guide-section-head">
+          <h2 id="guides-title">영상 가이드</h2>
+          <div class="guide-head-meta">
+            <p>주요 기능별 사용 방법을 영상으로 확인하세요.</p>
+            <a class="guide-playlist-link" href="https://www.youtube.com/playlist?list=PLSLc4qFaBYmY" target="_blank" rel="noopener">
+              YouTube 재생목록 <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="guide-tabs" role="tablist" aria-label="영상 가이드 구분">
+          <button id="user-guides-tab" class="guide-tab" type="button" role="tab" aria-selected="true" aria-controls="user-guides" tabindex="0" data-guide-tab>사용자 가이드</button>
+          <button id="admin-guides-tab" class="guide-tab" type="button" role="tab" aria-selected="false" aria-controls="admin-guides" tabindex="-1" data-guide-tab>관리자 가이드</button>
+        </div>
+
+        <div id="user-guides" class="guide-panel" role="tabpanel" aria-labelledby="user-guides-tab" data-guide-panel>
+          <div id="user-guide-list" class="guide-grid" data-guide-list data-visible-count="2">
+            <a class="guide-card" href="https://www.youtube.com/watch?v=L723XC6vGkE" target="_blank" rel="noopener" data-guide-item aria-label="로컬 파일 비교 영상 보기 (새 창)">
+              <span class="guide-play-icon" aria-hidden="true"></span>
+              <span class="guide-card-copy">
+                <span class="guide-card-kicker">USER GUIDE 01</span>
+                <strong>로컬 파일 비교</strong>
+              </span>
+              <span class="guide-card-cta"><span class="guide-cta-full">영상 보기</span><span class="guide-cta-short">보기</span> <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="guide-card" href="https://www.youtube.com/watch?v=N3WSpXKI84Y" target="_blank" rel="noopener" data-guide-item aria-label="서버 폴더 비교 영상 보기 (새 창)">
+              <span class="guide-play-icon" aria-hidden="true"></span>
+              <span class="guide-card-copy">
+                <span class="guide-card-kicker">USER GUIDE 02</span>
+                <strong>서버 폴더 비교</strong>
+              </span>
+              <span class="guide-card-cta"><span class="guide-cta-full">영상 보기</span><span class="guide-cta-short">보기</span> <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="guide-card" href="https://www.youtube.com/watch?v=elBtBAwDqAs" target="_blank" rel="noopener" data-guide-item aria-label="이미지 비교 결과 조회 영상 보기 (새 창)">
+              <span class="guide-play-icon" aria-hidden="true"></span>
+              <span class="guide-card-copy">
+                <span class="guide-card-kicker">USER GUIDE 03</span>
+                <strong>이미지 비교 결과 조회</strong>
+              </span>
+              <span class="guide-card-cta"><span class="guide-cta-full">영상 보기</span><span class="guide-cta-short">보기</span> <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+          <div class="guide-list-footer">
+            <span class="guide-count">전체 영상 <strong data-guide-count>3</strong>개</span>
+            <button class="guide-more" type="button" aria-expanded="false" aria-controls="user-guide-list" data-guide-more data-more-label="더보기" data-less-label="접기">
+              <span data-guide-more-label>더보기</span> <span data-guide-more-icon aria-hidden="true">↓</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="admin-guides" class="guide-panel" role="tabpanel" aria-labelledby="admin-guides-tab" data-guide-panel hidden>
+          <div class="guide-empty">
+            <strong>관리자 가이드 영상은 준비 중입니다.</strong>
+            <p>새 영상이 게시되면 이곳에서 바로 확인할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="whats-new" class="product-whats-new" aria-labelledby="whats-new-title">
       <div class="container">
         <p class="section-kicker">WHAT'S NEW</p>
@@ -546,6 +609,73 @@
       dialog.addEventListener('cancel', event => {
         event.preventDefault();
         closeLightbox();
+      });
+    })();
+
+    (() => {
+      const section = document.querySelector('.product-guides');
+      if (!section) return;
+
+      const tabs = Array.from(section.querySelectorAll('[data-guide-tab]'));
+      const panels = Array.from(section.querySelectorAll('[data-guide-panel]'));
+
+      const activateTab = (tab, moveFocus = false) => {
+        tabs.forEach(item => {
+          const isActive = item === tab;
+          item.setAttribute('aria-selected', String(isActive));
+          item.tabIndex = isActive ? 0 : -1;
+        });
+
+        panels.forEach(panel => {
+          panel.hidden = panel.id !== tab.getAttribute('aria-controls');
+        });
+
+        if (moveFocus) tab.focus();
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activateTab(tab));
+        tab.addEventListener('keydown', event => {
+          let nextIndex = null;
+          if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+          if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === 'Home') nextIndex = 0;
+          if (event.key === 'End') nextIndex = tabs.length - 1;
+          if (nextIndex === null) return;
+          event.preventDefault();
+          activateTab(tabs[nextIndex], true);
+        });
+      });
+
+      section.querySelectorAll('[data-guide-list]').forEach(list => {
+        const items = Array.from(list.querySelectorAll('[data-guide-item]'));
+        const panel = list.closest('[data-guide-panel]');
+        const count = panel?.querySelector('[data-guide-count]');
+        const moreButton = panel?.querySelector('[data-guide-more]');
+        const visibleCount = Number(list.dataset.visibleCount) || 2;
+        let expanded = false;
+
+        const render = () => {
+          items.forEach((item, index) => {
+            item.hidden = !expanded && index >= visibleCount;
+          });
+          if (count) count.textContent = String(items.length);
+          if (!moreButton) return;
+
+          moreButton.hidden = items.length <= visibleCount;
+          moreButton.setAttribute('aria-expanded', String(expanded));
+          const label = moreButton.querySelector('[data-guide-more-label]');
+          const icon = moreButton.querySelector('[data-guide-more-icon]');
+          if (label) label.textContent = expanded ? moreButton.dataset.lessLabel : moreButton.dataset.moreLabel;
+          if (icon) icon.textContent = expanded ? '↑' : '↓';
+        };
+
+        moreButton?.addEventListener('click', () => {
+          expanded = !expanded;
+          render();
+        });
+
+        render();
       });
     })();
 
