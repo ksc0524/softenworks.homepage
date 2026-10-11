@@ -96,6 +96,33 @@
 .product-hero h1 span {
 	color: var(--blue-2);
 	font-size: .9em;
+	font-weight: normal;
+}
+
+.product-hero-logo {
+	position: relative;
+	display: inline-block;
+	padding-left: calc(1em + 28px);
+}
+
+.product-hero-logo > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 100%;
+}
+
+.product-hero-logo > small {
+	display: block;
+	margin-top: 8px;
+	color: rgba(255, 255, 255, .5);
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: .12em;
+	white-space: nowrap;
+	text-shadow: none;
 }
 
 .product-hero-label {
@@ -2139,6 +2166,17 @@ body.feature-lightbox-open {
 
 	.product-hero h1 {
 		font-size: clamp(58px, 19vw, 86px);
+	}
+
+	.product-hero h1.product-hero-logo {
+		font-size: clamp(42px, 13.5vw, 86px);
+		padding-left: calc(1em + 20px);
+	}
+
+	.product-hero-logo > small {
+		margin-top: 6px;
+		font-size: 11px;
+		letter-spacing: .1em;
 	}
 
 	.section-nav .container {
